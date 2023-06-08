@@ -98,7 +98,8 @@ body{
                 }
 
                 .btndetect{
-                    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%);
+                    background-image: linear-gradient(to right, #f6d365 10%, #fda085 70%);
+                    
                     margin: 0;
                     padding: .7rem 2rem;
                     font-size: 1.1rem;
@@ -106,9 +107,10 @@ body{
                     border: none;
                     border-radius: .6rem;
                     // border: .13rem solid rgba(255, 255, 255, 0.3);
-                    // backdrop-filter: blur(.9rem);
-                    color: #fff;
+                    // backdrop-filter: blur(9rem);
+                    color: #252525;
                     transition: all 0.5s ease;
+                    box-shadow: .1rem .3rem .7rem rgba(253, 160, 133, .8);
                 }
                 .btndetect:hover{
                     cursor: pointer;

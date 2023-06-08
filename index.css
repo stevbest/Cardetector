@@ -84,15 +84,16 @@ body .hero .containers .cardentry input::placeholder {
   text-align: center;
 }
 body .hero .containers .cardentry .btndetect {
-  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%);
+  background-image: linear-gradient(to right, #f6d365 10%, #fda085 70%);
   margin: 0;
   padding: 0.7rem 2rem;
   font-size: 1.1rem;
   text-align: center;
   border: none;
   border-radius: 0.6rem;
-  color: #fff;
+  color: #252525;
   transition: all 0.5s ease;
+  box-shadow: 0.1rem 0.3rem 0.7rem rgba(253, 160, 133, 0.8);
 }
 body .hero .containers .cardentry .btndetect:hover {
   cursor: pointer;
