@@ -238,6 +238,35 @@ $bp : (
     body .hero .containers .card{
         background-color: black;
         width: 100%;
+        height: 15rem;
+        padding: 0;
+        padding-left: .8rem;
+        padding-right: .8rem;
+
+        .cardnumber{
+            letter-spacing: .25rem;
+            // background-color: red;
+        }
+
+        .wave{
+            // background-color: red;
+            img{
+                width: 1.2rem;
+            }
+        }
+
+        .hiddenpin{
+            // background-color: aquamarine;
+           
+        }
+
+        .terminal{
+            // background-color: aqua;
+            img{
+                width: 3.2rem;
+            }
+            
+        }
     }
 
 }

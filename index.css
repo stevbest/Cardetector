@@ -174,5 +174,18 @@ body .hero .containers .card .cardinfo .cardtype {
   body .hero .containers .card {
     background-color: black;
     width: 100%;
+    height: 15rem;
+    padding: 0;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  body .hero .containers .card .cardnumber {
+    letter-spacing: 0.25rem;
+  }
+  body .hero .containers .card .wave img {
+    width: 1.2rem;
+  }
+  body .hero .containers .card .terminal img {
+    width: 3.2rem;
   }
 }/*# sourceMappingURL=index.css.map */
