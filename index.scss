@@ -123,7 +123,7 @@ body{
 
 
             .card{
-                // display: none;
+                display: none;
                 width: 25rem;
                 padding-left: .5rem;
                 padding-right: .2rem;
@@ -170,7 +170,7 @@ body{
                 .cardnumber{
                     width: 100%;
                     font-size: 2rem;
-                    letter-spacing: .38rem;
+                    letter-spacing: .27rem;
                     text-align: center;
                     color: #fff;
                     text-align: left;
@@ -233,7 +233,7 @@ $bp : (
 @include query(mobile){
 
     body .hero .containers{
-        background-color: red;
+        //background-color: red;
     }
     body .hero .containers .card{
         background-color: black;
@@ -244,9 +244,9 @@ $bp : (
         padding-right: .8rem;
 
         .cardnumber{
-            // letter-spacing: .2rem;
+            letter-spacing: .4rem;
             width: 100%;
-            background-color: red;
+            //background-color: red;
             font-size: 6vw;
             text-align: center;
         }
@@ -270,6 +270,33 @@ $bp : (
             }
             
         }
+    }
+
+
+    body .hero .containers .cardentry{
+        // background-color: rgb(192, 19, 19);
+        
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-areas: "tm1 tm2"
+         "tm3 tm3";
+
+        gap: 1rem;
+
+        .txtcardno{
+            grid-area: tm1;
+            // width: 15rem;
+        }
+        .txtcardsecpin{
+            grid-area: tm2;
+            // width: 5rem;
+        }
+        .btndetect{
+            grid-area: tm3;
+            margin: 0 3rem;
+        }
+        
     }
 
 }

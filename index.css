@@ -177,7 +177,7 @@ body .hero .containers .card .cardinfo .cardtype {
     padding-right: 0.8rem;
   }
   body .hero .containers .card .cardnumber {
-    letter-spacing: 0.48rem;
+    letter-spacing: 0.4rem;
     width: 100%;
     font-size: 6vw;
     text-align: center;
@@ -188,9 +188,21 @@ body .hero .containers .card .cardinfo .cardtype {
   body .hero .containers .card .terminal img {
     width: 3.2rem;
   }
-  body .hero .cardentry {
-    flex-direction: column;
-    justify-content: center;
+  body .hero .containers .cardentry {
+    display: grid;
     align-items: center;
+    justify-content: center;
+    grid-template-areas: "tm1 tm2" "tm3 tm3";
+    gap: 1rem;
+  }
+  body .hero .containers .cardentry .txtcardno {
+    grid-area: tm1;
+  }
+  body .hero .containers .cardentry .txtcardsecpin {
+    grid-area: tm2;
+  }
+  body .hero .containers .cardentry .btndetect {
+    grid-area: tm3;
+    margin: 0 3rem;
   }
 }/*# sourceMappingURL=index.css.map */
