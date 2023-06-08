@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     outline: none;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 html{
@@ -245,7 +245,10 @@ $bp : (
 
         .cardnumber{
             letter-spacing: .25rem;
-            // background-color: red;
+            width: 100%;
+            background-color: red;
+            font-size: 1.8rem;
+            text-align: center;
         }
 
         .wave{

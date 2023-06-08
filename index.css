@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   outline: none;
-  overflow: hidden;
 }
 
 html {
@@ -181,6 +180,10 @@ body .hero .containers .card .cardinfo .cardtype {
   }
   body .hero .containers .card .cardnumber {
     letter-spacing: 0.25rem;
+    width: 100%;
+    background-color: red;
+    font-size: 1.8rem;
+    text-align: center;
   }
   body .hero .containers .card .wave img {
     width: 1.2rem;
