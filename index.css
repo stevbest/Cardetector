@@ -181,8 +181,8 @@ body .hero .containers .card .cardinfo .cardtype {
   body .hero .containers .card .cardnumber {
     width: 100%;
     background-color: red;
-    font-size: 1.8rem;
-    text-align: justify;
+    font-size: 6vw;
+    text-align: center;
   }
   body .hero .containers .card .wave img {
     width: 1.2rem;
