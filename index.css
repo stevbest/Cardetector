@@ -84,14 +84,13 @@ body .hero .containers .cardentry input::placeholder {
   text-align: center;
 }
 body .hero .containers .cardentry .btndetect {
-  background-color: transparent;
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%);
   margin: 0;
   padding: 0.7rem 2rem;
   font-size: 1.1rem;
   text-align: center;
   border: none;
   border-radius: 0.6rem;
-  border: 0.13rem solid rgba(255, 255, 255, 0.3);
   color: #fff;
   transition: all 0.5s ease;
 }
@@ -193,7 +192,7 @@ body .hero .containers .card .cardinfo .cardtype {
     align-items: center;
     justify-content: center;
     grid-template-areas: "tm1 tm2" "tm3 tm3";
-    gap: 1rem;
+    gap: 2rem;
   }
   body .hero .containers .cardentry .txtcardno {
     grid-area: tm1;

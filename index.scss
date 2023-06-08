@@ -98,14 +98,14 @@ body{
                 }
 
                 .btndetect{
-                    background-color: transparent;
+                    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%);
                     margin: 0;
                     padding: .7rem 2rem;
                     font-size: 1.1rem;
                     text-align: center;
                     border: none;
                     border-radius: .6rem;
-                    border: .13rem solid rgba(255, 255, 255, 0.3);
+                    // border: .13rem solid rgba(255, 255, 255, 0.3);
                     // backdrop-filter: blur(.9rem);
                     color: #fff;
                     transition: all 0.5s ease;
@@ -282,7 +282,7 @@ $bp : (
         grid-template-areas: "tm1 tm2"
          "tm3 tm3";
 
-        gap: 1rem;
+        gap: 2rem;
 
         .txtcardno{
             grid-area: tm1;
@@ -293,8 +293,10 @@ $bp : (
             // width: 5rem;
         }
         .btndetect{
+            // margin-top: 4rem;
             grid-area: tm3;
             margin: 0 3rem;
+            // background-color: ;
         }
         
     }
