@@ -103,6 +103,7 @@ body .hero .containers .cardentry .btndetect:hover {
   border: none;
 }
 body .hero .containers .card {
+  display: none;
   width: 25rem;
   padding-left: 0.5rem;
   padding-right: 0.2rem;
@@ -137,7 +138,7 @@ body .hero .containers .card .hiddenpin {
 body .hero .containers .card .cardnumber {
   width: 100%;
   font-size: 2rem;
-  letter-spacing: 0.38rem;
+  letter-spacing: 0.27rem;
   text-align: center;
   color: #fff;
   text-align: left;
@@ -167,9 +168,6 @@ body .hero .containers .card .cardinfo .cardtype {
 }
 
 @media (max-width: 480px) {
-  body .hero .containers {
-    background-color: red;
-  }
   body .hero .containers .card {
     background-color: black;
     width: 100%;
@@ -179,8 +177,8 @@ body .hero .containers .card .cardinfo .cardtype {
     padding-right: 0.8rem;
   }
   body .hero .containers .card .cardnumber {
+    letter-spacing: 0.48rem;
     width: 100%;
-    background-color: red;
     font-size: 6vw;
     text-align: center;
   }
@@ -189,5 +187,10 @@ body .hero .containers .card .cardinfo .cardtype {
   }
   body .hero .containers .card .terminal img {
     width: 3.2rem;
+  }
+  body .hero .cardentry {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=index.css.map */
