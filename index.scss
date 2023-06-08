@@ -217,147 +217,147 @@ $bp : (
     mobile:480px,
     tablet:768px,
 );
-@mixin query ($screen){
-    @each $key, $value in $bp{
-        @if($key == $screen){
-            @media (max-width:$value) {
-                @content;
-            }
-        }
-    }
-}
+// @mixin query ($screen){
+//     @each $key, $value in $bp{
+//         @if($key == $screen){
+//             @media (max-width:$value) {
+//                 @content;
+//             }
+//         }
+//     }
+// }
 
 
-@include query(mobile){
+// @include query(mobile){
 
-    // body .hero{
-    //     height: 100vh;
-    // }
-    body .hero .containers .title{
-        line-height: 2rem;
+//     // body .hero{
+//     //     height: 100vh;
+//     // }
+//     body .hero .containers .title{
+//         line-height: 2rem;
         
-    }
-    body .hero .containers .title .titles{
-        font-size: 1.8rem;
-        margin-bottom: 3rem;
-    }
+//     }
+//     body .hero .containers .title .titles{
+//         font-size: 1.8rem;
+//         margin-bottom: 3rem;
+//     }
 
 
-    // body .hero .containers .carddetails{
-    //     // background-color: red;
-    // }
+//     // body .hero .containers .carddetails{
+//     //     // background-color: red;
+//     // }
 
-    body .hero .containers .carddetails .cardentry{
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem   ;
-        grid-template-areas: "item1 item2"
-                    "item3 item3";
-        // background-color: black;
+//     body .hero .containers .carddetails .cardentry{
+//         width: 100%;
+//         display: grid;
+//         grid-template-columns: auto;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 1rem   ;
+//         grid-template-areas: "item1 item2"
+//                     "item3 item3";
+//         // background-color: black;
 
-        .txtcardno{
-            grid-area: item1;
-        }
-        .txtcardsecpin{
-            grid-area: item2;
-        }
-        .btndetect{
-            grid-row: item3;
-            margin-left: 5rem;
-        }
+//         .txtcardno{
+//             grid-area: item1;
+//         }
+//         .txtcardsecpin{
+//             grid-area: item2;
+//         }
+//         .btndetect{
+//             grid-row: item3;
+//             margin-left: 5rem;
+//         }
 
-    }
-
-
-    body .hero .containers .carddetails .container{
-        //display: block;
-        width: 100%;
-        height: 14rem;
-        margin-top: 2rem;
-        transition: all .5s ease;
+//     }
 
 
-        .card{
-            .backg{
-                background-position: bottom;
-                background-size: 100%;
-                .creditcard{
-                    font-size: 1rem;
-                }
-
-                .wave{
-                    img{
-                        width: 1.2rem;
-                    }
-                }
+//     body .hero .containers .carddetails .container{
+//         //display: block;
+//         width: 100%;
+//         height: 14rem;
+//         margin-top: 2rem;
+//         transition: all .5s ease;
 
 
-                .terminal{
+//         .card{
+//             .backg{
+//                 background-position: bottom;
+//                 background-size: 100%;
+//                 .creditcard{
+//                     font-size: 1rem;
+//                 }
+
+//                 .wave{
+//                     img{
+//                         width: 1.2rem;
+//                     }
+//                 }
+
+
+//                 .terminal{
                     
-                    img{
-                        width: 3rem;
-                    }
-                }
+//                     img{
+//                         width: 3rem;
+//                     }
+//                 }
 
-                .hiddenpin{
-                    font-size: 1rem;
-                    margin-right: 0;
-                }
+//                 .hiddenpin{
+//                     font-size: 1rem;
+//                     margin-right: 0;
+//                 }
 
 
-                .cardnumber{
-                    font-size: 1.6rem;
-                    letter-spacing: .4rem;
+//                 .cardnumber{
+//                     font-size: 1.6rem;
+//                     letter-spacing: .4rem;
                    
-                }
+//                 }
 
 
-                .cardinfo{
-                    margin-top: .5rem;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
+//                 .cardinfo{
+//                     margin-top: .5rem;
+//                     display: flex;
+//                     flex-direction: row;
+//                     align-items: center;
+//                     justify-content: space-between;
 
 
-                    &__name{
-                        font-size: 1.2rem;
-                        color: #fff;
-                    }
+//                     &__name{
+//                         font-size: 1.2rem;
+//                         color: #fff;
+//                     }
 
 
-                    .cardinfo__validdate{
-                        font-size: 1rem;
-                        .validlbl{
-                            font-size: .5rem;
-                        }
-                    }
+//                     .cardinfo__validdate{
+//                         font-size: 1rem;
+//                         .validlbl{
+//                             font-size: .5rem;
+//                         }
+//                     }
 
-                    .cardtype{
-                        width: 4.4rem;
-                    }
-                }
-
-
-
+//                     .cardtype{
+//                         width: 4.4rem;
+//                     }
+//                 }
 
 
 
 
-            }
-        }
+
+
+
+//             }
+//         }
 
         
 
 
 
 
-    }
+//     }
 
-}
+// }
 
 
 
