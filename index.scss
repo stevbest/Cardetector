@@ -11,13 +11,14 @@ html{
 }
 
 body{
+
+    background: url('./painting-jungle-scene-with-green-plant-green-leafy-plant.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     .hero{
-        background: url('./painting-jungle-scene-with-green-plant-green-leafy-plant.jpg');
         width: 100%;
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
+        min-height: 100vh;
         position: relative;
         transition: all .5s ease-in-out;
         display: flex;
