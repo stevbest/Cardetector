@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    font-family: 'Poppins', sans-serif, 'Roboto';
+    font-size: 18px;
+}
+
+body{
+    .hero{
+        background: url('./painting-jungle-scene-with-green-plant-green-leafy-plant.jpg');
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        transition: all .5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .containers{
+            // margin: auto auto;
+            // background-color: black;
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .title{
+                margin-bottom: 2rem;
+                text-align: center;
+                color: #fff;
+                line-height: 3rem;
+                transition: all .5s ease;
+            .titles{
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            .author{
+                font-size: 1.5rem;
+                font-weight: 550;
+            }
+        
+    
+        
+            }
+
+            //card details
+            .carddetails{
+                // background-color: rgb(192, 19, 19);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                transition: all 0.5s ease;
+                .cardentry{
+                    // background-color: rgb(192, 19, 19);
+                    margin-bottom: 2rem;
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    gap:1.5rem;
+                    justify-content: center;
+
+                    input{
+                        padding: 1.2rem;
+                        height: 3rem;
+                        font-size: 1.2rem;
+                        background: transparent;
+                        border: none;
+                        background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(.2rem);
+                        border-radius: .6rem;
+                        text-align: center;
+                        color: #fff;
+                        outline: none;
+                    }
+                    
+                    .txtcardno{
+                        width: 14.7rem;
+                        
+                    }
+
+                    .txtcardsecpin{
+                        width: 5rem;
+                        
+                    }
+
+                    input::placeholder{
+                        color: rgb(255, 255, 255);
+                        text-align: center;
+                    }
+
+                    .btndetect{
+                        background-color: transparent;
+                        margin: 0;
+                        padding: .7rem 2rem;
+                        font-size: 1.1rem;
+                        text-align: center;
+                        border: none;
+                        border-radius: .6rem;
+                        border: .13rem solid rgba(255, 255, 255, 0.3);
+                        // backdrop-filter: blur(.9rem);
+                        color: #fff;
+                        transition: all 0.5s ease;
+                    }
+                    .btndetect:hover{
+                        cursor: pointer;
+                        background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(.2rem);
+                        border: none;
+                    }
+
+
+                }
+
+
+
+                .container{
+                    display: none;
+                    //display: flex;
+                    //background-color: aquamarine;
+                    width: 30rem;
+                    height: 17rem;
+                    //position:absolute;
+                    border-radius: 1rem;
+                    // top: 50%;
+                    // left: 50%;
+                    //transform: translate(-50%, -50%);
+                    border: none;
+                    transition: all .5s ease-in-out;
+                    // filter: blur(.2rem);
+                    .card{
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(255, 255, 255, 0.06);
+                        backdrop-filter: blur(.42rem);
+                        border: .15rem solid rgba(255, 255, 255, 0.3);
+                        border-radius: 1.5rem;
+                        // filter: none;
+    
+                        .backg{
+                            width: 100%;
+                            height: 100%;
+                            background:url('./map1.png') no-repeat bottom;
+                            // opacity: .3;
+    
+                            display: flex;
+                            flex-direction: column;
+                            // gap: 0rem;
+                            padding: 1rem 1.2rem;
+    
+                            .creditcard{
+                                font-size: 1.22rem;
+                                font-weight: 600;
+                                // color: #05192C;
+                                color: #fff;
+                                // margin-left: 2rem;
+                            }
+                            .wave{
+                                // background-color: #05192C;
+                                text-align: right;
+                                img{
+                                    width: 1.6rem;
+                                }
+                            }
+    
+                            .terminal{
+                                // background-color: #05192C;
+                                img{
+                                    width: 4.2rem;
+                                }
+                            }
+    
+    
+                            .hiddenpin{
+                                text-align: right;
+                                color: #fff;
+                                margin-right: .6rem;
+                                font-size: 1.2rem;
+                            }
+    
+                            .cardnumber{
+                                width: 100%;
+                                font-size: 2.2rem;
+                                letter-spacing: .5rem;
+                                text-align: center;
+                                color: #fff;
+                                text-align: left;
+                               
+                            }
+    
+                            .cardinfo{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: space-between;
+    
+    
+                                &__name{
+                                    font-size: 1.25rem;
+                                    color: #fff;
+                                }
+    
+    
+                                .cardinfo__validdate{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: .5rem;
+                                    // font-size: 1rem;
+                                    color: #fff;
+                                    .validlbl{
+                                        font-size: .7rem;
+                                    }
+                                }
+    
+                                .cardtype{
+                                    width: 5.4rem;
+                                }
+                            }
+    
+    
+    
+    
+                        }
+                    }
+                }
+            }
+            
+
+        }
+        
+    }
+}
+
+$bp : (
+    mobile:480px,
+    tablet:768px,
+);
+@mixin query ($screen){
+    @each $key, $value in $bp{
+        @if($key == $screen){
+            @media (max-width:$value) {
+                @content;
+            }
+        }
+    }
+}
+
+
+@include query(mobile){
+
+    // body .hero{
+    //     height: 100vh;
+    // }
+    body .hero .containers .title{
+        line-height: 2rem;
+        
+    }
+    body .hero .containers .title .titles{
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+
+    // body .hero .containers .carddetails{
+    //     // background-color: red;
+    // }
+
+    body .hero .containers .carddetails .cardentry{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem   ;
+        grid-template-areas: "item1 item2"
+                    "item3 item3";
+        // background-color: black;
+
+        .txtcardno{
+            grid-area: item1;
+        }
+        .txtcardsecpin{
+            grid-area: item2;
+        }
+        .btndetect{
+            grid-row: item3;
+            margin-left: 5rem;
+        }
+
+    }
+
+
+    body .hero .containers .carddetails .container{
+        //display: block;
+        width: 100%;
+        height: 14rem;
+        margin-top: 2rem;
+        transition: all .5s ease;
+
+
+        .card{
+            .backg{
+                background-position: bottom;
+                background-size: 100%;
+                .creditcard{
+                    font-size: 1rem;
+                }
+
+                .wave{
+                    img{
+                        width: 1.2rem;
+                    }
+                }
+
+
+                .terminal{
+                    
+                    img{
+                        width: 3rem;
+                    }
+                }
+
+                .hiddenpin{
+                    font-size: 1rem;
+                    margin-right: 0;
+                }
+
+
+                .cardnumber{
+                    font-size: 1.6rem;
+                    letter-spacing: .4rem;
+                   
+                }
+
+
+                .cardinfo{
+                    margin-top: .5rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+
+                    &__name{
+                        font-size: 1.2rem;
+                        color: #fff;
+                    }
+
+
+                    .cardinfo__validdate{
+                        font-size: 1rem;
+                        .validlbl{
+                            font-size: .5rem;
+                        }
+                    }
+
+                    .cardtype{
+                        width: 4.4rem;
+                    }
+                }
+
+
+
+
+
+
+
+            }
+        }
+
+        
+
+
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Satisfy', cursive;

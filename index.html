@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Detector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Satisfy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="hero">
+
+        <div class="containers">
+
+            <p class="title">
+                <span class="titles">CREDIT CARD FRAUD DETECTOR</span>
+                <br><br><span class="author">by mos.Soft</span>
+            </p>
+    
+           <div class="carddetails">
+                
+                <div class="cardentry">
+                    <input id="txtcardno" class="txtcardno" type="text" placeholder="Enter card number">
+                    <input id="txtcardsecpin" class="txtcardsecpin" type="text" placeholder="sgnt.">
+                    <button id="btndetect" class="btndetect">Detect</button>
+                </div>
+    
+                <div id="container" class="container">
+    
+                    <div class="card">
+                        <div class="backg">
+                            <p class="creditcard">CREDIT CARD</p>
+                            <p class="wave"><img src="./use.png" alt=""></p>
+                            <p class="terminal"><img src="./use1.png" alt=""></p>
+                            <!-- <p class="cardtype"><img src="./use.png" alt=""></p> -->
+                            <p id="hiddenpin" class="hiddenpin"></p>
+                            <p id="cardnumber" class="cardnumber"></p>
+                            <div class="cardinfo">
+                                <div id="cardinfo__name" class="cardinfo__name"></div>
+                                <div class="cardinfo__validdate">
+                                    <p class="validlbl">VALID <br>THRU</p>
+                                    <p class="valdate">11/24</p>
+                                </div>
+                                <img class="cardtype" src="./use2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
+           </div>
+        </div>
+
+    </div>
+
+    <script src="index.mjs"></script>
+</body>
+</html>
