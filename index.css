@@ -12,8 +12,8 @@ html {
 
 body .hero {
   background: url("./painting-jungle-scene-with-green-plant-green-leafy-plant.jpg");
-  width: 100%;
   min-height: 100vh;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -165,80 +165,4 @@ body .hero .containers .card .cardinfo .cardinfo__validdate .validlbl {
 body .hero .containers .card .cardinfo .cardtype {
   width: 5rem;
   margin-right: 0.5rem;
-}
-
-@media (max-width: 480px) {
-  body .hero .containers .title {
-    line-height: 2rem;
-  }
-  body .hero .containers .title .titles {
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
-  }
-  body .hero .containers .carddetails .cardentry {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    grid-template-areas: "item1 item2" "item3 item3";
-  }
-  body .hero .containers .carddetails .cardentry .txtcardno {
-    grid-area: item1;
-  }
-  body .hero .containers .carddetails .cardentry .txtcardsecpin {
-    grid-area: item2;
-  }
-  body .hero .containers .carddetails .cardentry .btndetect {
-    grid-row: item3;
-    margin-left: 5rem;
-  }
-  body .hero .containers .carddetails .container {
-    width: 100%;
-    height: 14rem;
-    margin-top: 2rem;
-    transition: all 0.5s ease;
-  }
-  body .hero .containers .carddetails .container .card .backg {
-    background-position: bottom;
-    background-size: 100%;
-  }
-  body .hero .containers .carddetails .container .card .backg .creditcard {
-    font-size: 1rem;
-  }
-  body .hero .containers .carddetails .container .card .backg .wave img {
-    width: 1.2rem;
-  }
-  body .hero .containers .carddetails .container .card .backg .terminal img {
-    width: 3rem;
-  }
-  body .hero .containers .carddetails .container .card .backg .hiddenpin {
-    font-size: 1rem;
-    margin-right: 0;
-  }
-  body .hero .containers .carddetails .container .card .backg .cardnumber {
-    font-size: 1.6rem;
-    letter-spacing: 0.4rem;
-  }
-  body .hero .containers .carddetails .container .card .backg .cardinfo {
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  body .hero .containers .carddetails .container .card .backg .cardinfo__name {
-    font-size: 1.2rem;
-    color: #fff;
-  }
-  body .hero .containers .carddetails .container .card .backg .cardinfo .cardinfo__validdate {
-    font-size: 1rem;
-  }
-  body .hero .containers .carddetails .container .card .backg .cardinfo .cardinfo__validdate .validlbl {
-    font-size: 0.5rem;
-  }
-  body .hero .containers .carddetails .container .card .backg .cardinfo .cardtype {
-    width: 4.4rem;
-  }
 }/*# sourceMappingURL=index.css.map */
