@@ -1,5 +1,5 @@
 
-var card_container = document.getElementById('container');
+var card_container = document.getElementById('card');
 var card_no = document.getElementById('txtcardno');
 var card_sec_pin = document.getElementById('txtcardsecpin');
 

@@ -25,17 +25,18 @@ body .hero {
   justify-content: center;
 }
 body .hero .containers {
-  width: 85%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease;
 }
 body .hero .containers .title {
   margin-bottom: 2rem;
   text-align: center;
   color: #fff;
-  line-height: 3rem;
+  line-height: 2rem;
   transition: all 0.5s ease;
 }
 body .hero .containers .title .titles {
@@ -44,29 +45,20 @@ body .hero .containers .title .titles {
 }
 body .hero .containers .title .author {
   font-size: 1.5rem;
-  font-weight: 550;
+  font-weight: 500;
 }
-body .hero .containers .carddetails {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease;
-}
-body .hero .containers .carddetails .cardentry {
-  margin-bottom: 2rem;
+body .hero .containers .cardentry {
+  margin-top: 3rem;
   display: flex;
   align-items: center;
-  width: 50%;
   gap: 1.5rem;
   justify-content: center;
+  width: 100%;
 }
-body .hero .containers .carddetails .cardentry input {
+body .hero .containers .cardentry input {
   padding: 1.2rem;
   height: 3rem;
-  font-size: 1.2rem;
+  font-size: 1.14rem;
   background: transparent;
   border: none;
   background: rgba(255, 255, 255, 0.1);
@@ -77,21 +69,21 @@ body .hero .containers .carddetails .cardentry input {
   color: #fff;
   outline: none;
 }
-body .hero .containers .carddetails .cardentry .txtcardno {
+body .hero .containers .cardentry .txtcardno {
   width: 14.7rem;
 }
-body .hero .containers .carddetails .cardentry .txtcardsecpin {
+body .hero .containers .cardentry .txtcardsecpin {
   width: 5rem;
 }
-body .hero .containers .carddetails .cardentry input::-moz-placeholder {
+body .hero .containers .cardentry input::-moz-placeholder {
   color: rgb(255, 255, 255);
   text-align: center;
 }
-body .hero .containers .carddetails .cardentry input::placeholder {
+body .hero .containers .cardentry input::placeholder {
   color: rgb(255, 255, 255);
   text-align: center;
 }
-body .hero .containers .carddetails .cardentry .btndetect {
+body .hero .containers .cardentry .btndetect {
   background-color: transparent;
   margin: 0;
   padding: 0.7rem 2rem;
@@ -103,87 +95,76 @@ body .hero .containers .carddetails .cardentry .btndetect {
   color: #fff;
   transition: all 0.5s ease;
 }
-body .hero .containers .carddetails .cardentry .btndetect:hover {
+body .hero .containers .cardentry .btndetect:hover {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(0.2rem);
           backdrop-filter: blur(0.2rem);
   border: none;
 }
-body .hero .containers .carddetails .container {
+body .hero .containers .card {
   display: none;
-  width: 30rem;
-  height: 17rem;
-  border-radius: 1rem;
-  border: none;
-  transition: all 0.5s ease-in-out;
-}
-body .hero .containers .carddetails .container .card {
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.06);
+  width: 25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
+  background: url("./map1.png") no-repeat bottom;
   -webkit-backdrop-filter: blur(0.42rem);
           backdrop-filter: blur(0.42rem);
   border: 0.15rem solid rgba(255, 255, 255, 0.3);
   border-radius: 1.5rem;
 }
-body .hero .containers .carddetails .container .card .backg {
-  width: 100%;
-  height: 100%;
-  background: url("./map1.png") no-repeat bottom;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 1.2rem;
-}
-body .hero .containers .carddetails .container .card .backg .creditcard {
+body .hero .containers .card .creditcard {
   font-size: 1.22rem;
   font-weight: 600;
   color: #fff;
 }
-body .hero .containers .carddetails .container .card .backg .wave {
+body .hero .containers .card .wave {
   text-align: right;
 }
-body .hero .containers .carddetails .container .card .backg .wave img {
+body .hero .containers .card .wave img {
   width: 1.6rem;
 }
-body .hero .containers .carddetails .container .card .backg .terminal img {
+body .hero .containers .card .terminal img {
   width: 4.2rem;
 }
-body .hero .containers .carddetails .container .card .backg .hiddenpin {
+body .hero .containers .card .hiddenpin {
   text-align: right;
   color: #fff;
   margin-right: 0.6rem;
   font-size: 1.2rem;
 }
-body .hero .containers .carddetails .container .card .backg .cardnumber {
+body .hero .containers .card .cardnumber {
   width: 100%;
-  font-size: 2.2rem;
-  letter-spacing: 0.5rem;
+  font-size: 2rem;
+  letter-spacing: 0.38rem;
   text-align: center;
   color: #fff;
   text-align: left;
 }
-body .hero .containers .carddetails .container .card .backg .cardinfo {
+body .hero .containers .card .cardinfo {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-body .hero .containers .carddetails .container .card .backg .cardinfo__name {
+body .hero .containers .card .cardinfo__name {
   font-size: 1.25rem;
   color: #fff;
 }
-body .hero .containers .carddetails .container .card .backg .cardinfo .cardinfo__validdate {
+body .hero .containers .card .cardinfo .cardinfo__validdate {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   color: #fff;
 }
-body .hero .containers .carddetails .container .card .backg .cardinfo .cardinfo__validdate .validlbl {
+body .hero .containers .card .cardinfo .cardinfo__validdate .validlbl {
   font-size: 0.7rem;
 }
-body .hero .containers .carddetails .container .card .backg .cardinfo .cardtype {
-  width: 5.4rem;
+body .hero .containers .card .cardinfo .cardtype {
+  width: 5rem;
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 480px) {

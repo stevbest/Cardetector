@@ -22,25 +22,26 @@ body{
         transition: all .5s ease-in-out;
         display: flex;
         flex-direction: column;
-        // display: flex;
-        // flex-direction: column;
         align-items: center;
         justify-content: center;
 
         .containers{
             // margin: auto auto;
-            // background-color: black;
-            width: 85%;
+           // background-color: black;
+            width: 95%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            transition: all 0.5s ease;
+            // padding: .5rem 0 ;
+
 
             .title{
                 margin-bottom: 2rem;
                 text-align: center;
                 color: #fff;
-                line-height: 3rem;
+                line-height: 2rem;
                 transition: all .5s ease;
             .titles{
                 font-size: 2rem;
@@ -49,7 +50,7 @@ body{
 
             .author{
                 font-size: 1.5rem;
-                font-weight: 550;
+                font-weight: 500;
             }
         
     
@@ -57,190 +58,155 @@ body{
             }
 
             //card details
-            .carddetails{
-                // background-color: rgb(192, 19, 19);
-                width: 100%;
-                height: 100%;
+            .cardentry{
+                //background-color: rgb(192, 19, 19);
+                margin-top: 3rem;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
+                gap:1.5rem;
                 justify-content: center;
-
-                transition: all 0.5s ease;
-                .cardentry{
-                    // background-color: rgb(192, 19, 19);
-                    margin-bottom: 2rem;
-                    display: flex;
-                    align-items: center;
-                    width: 50%;
-                    gap:1.5rem;
-                    justify-content: center;
-
-                    input{
-                        padding: 1.2rem;
-                        height: 3rem;
-                        font-size: 1.2rem;
-                        background: transparent;
-                        border: none;
-                        background: rgba(255, 255, 255, 0.1);
-                        backdrop-filter: blur(.2rem);
-                        border-radius: .6rem;
-                        text-align: center;
-                        color: #fff;
-                        outline: none;
-                    }
+                width: 100%;
+                input{
+                    padding: 1.2rem;
+                    height: 3rem;
+                    font-size: 1.14rem;
+                    background: transparent;
+                    border: none;
+                    background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(.2rem);
+                    border-radius: .6rem;
+                    text-align: center;
+                    color: #fff;
+                    outline: none;
+                }
+                
+                .txtcardno{
+                    width: 14.7rem;
                     
-                    .txtcardno{
-                        width: 14.7rem;
-                        
-                    }
+                }
 
-                    .txtcardsecpin{
-                        width: 5rem;
-                        
-                    }
+                .txtcardsecpin{
+                    width: 5rem;
+                    
+                }
 
-                    input::placeholder{
-                        color: rgb(255, 255, 255);
-                        text-align: center;
-                    }
+                input::placeholder{
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                }
 
-                    .btndetect{
-                        background-color: transparent;
-                        margin: 0;
-                        padding: .7rem 2rem;
-                        font-size: 1.1rem;
-                        text-align: center;
-                        border: none;
-                        border-radius: .6rem;
-                        border: .13rem solid rgba(255, 255, 255, 0.3);
-                        // backdrop-filter: blur(.9rem);
-                        color: #fff;
-                        transition: all 0.5s ease;
-                    }
-                    .btndetect:hover{
-                        cursor: pointer;
-                        background: rgba(255, 255, 255, 0.1);
-                        backdrop-filter: blur(.2rem);
-                        border: none;
-                    }
-
-
+                .btndetect{
+                    background-color: transparent;
+                    margin: 0;
+                    padding: .7rem 2rem;
+                    font-size: 1.1rem;
+                    text-align: center;
+                    border: none;
+                    border-radius: .6rem;
+                    border: .13rem solid rgba(255, 255, 255, 0.3);
+                    // backdrop-filter: blur(.9rem);
+                    color: #fff;
+                    transition: all 0.5s ease;
+                }
+                .btndetect:hover{
+                    cursor: pointer;
+                    background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(.2rem);
+                    border: none;
                 }
 
 
+            }
 
-                .container{
-                    display: none;
-                    //display: flex;
-                    //background-color: aquamarine;
-                    width: 30rem;
-                    height: 17rem;
-                    //position:absolute;
-                    border-radius: 1rem;
-                    // top: 50%;
-                    // left: 50%;
-                    //transform: translate(-50%, -50%);
-                    border: none;
-                    transition: all .5s ease-in-out;
-                    // filter: blur(.2rem);
-                    .card{
-                        width: 100%;
-                        height: 100%;
-                        background: rgba(255, 255, 255, 0.06);
-                        backdrop-filter: blur(.42rem);
-                        border: .15rem solid rgba(255, 255, 255, 0.3);
-                        border-radius: 1.5rem;
-                        // filter: none;
-    
-                        .backg{
-                            width: 100%;
-                            height: 100%;
-                            background:url('./map1.png') no-repeat bottom;
-                            // opacity: .3;
-    
-                            display: flex;
-                            flex-direction: column;
-                            // gap: 0rem;
-                            padding: 1rem 1.2rem;
-    
-                            .creditcard{
-                                font-size: 1.22rem;
-                                font-weight: 600;
-                                // color: #05192C;
-                                color: #fff;
-                                // margin-left: 2rem;
-                            }
-                            .wave{
-                                // background-color: #05192C;
-                                text-align: right;
-                                img{
-                                    width: 1.6rem;
-                                }
-                            }
-    
-                            .terminal{
-                                // background-color: #05192C;
-                                img{
-                                    width: 4.2rem;
-                                }
-                            }
-    
-    
-                            .hiddenpin{
-                                text-align: right;
-                                color: #fff;
-                                margin-right: .6rem;
-                                font-size: 1.2rem;
-                            }
-    
-                            .cardnumber{
-                                width: 100%;
-                                font-size: 2.2rem;
-                                letter-spacing: .5rem;
-                                text-align: center;
-                                color: #fff;
-                                text-align: left;
-                               
-                            }
-    
-                            .cardinfo{
-                                display: flex;
-                                flex-direction: row;
-                                align-items: center;
-                                justify-content: space-between;
-    
-    
-                                &__name{
-                                    font-size: 1.25rem;
-                                    color: #fff;
-                                }
-    
-    
-                                .cardinfo__validdate{
-                                    display: flex;
-                                    align-items: center;
-                                    gap: .5rem;
-                                    // font-size: 1rem;
-                                    color: #fff;
-                                    .validlbl{
-                                        font-size: .7rem;
-                                    }
-                                }
-    
-                                .cardtype{
-                                    width: 5.4rem;
-                                }
-                            }
-    
-    
-    
-    
+
+
+            .card{
+                display: none;
+                width: 25rem;
+                padding-left: .5rem;
+                padding-right: .2rem;
+                padding-top: .4rem;
+                padding-bottom: .2rem;
+                // padding: 1rem 1rem 2rem;
+                background:url('./map1.png') no-repeat bottom;
+                backdrop-filter: blur(.42rem);
+                border: .15rem solid rgba(255, 255, 255, 0.3);
+                border-radius: 1.5rem;
+                // filter: none;
+
+                
+                .creditcard{
+                    font-size: 1.22rem;
+                    font-weight: 600;
+                    // color: #05192C;
+                    color: #fff;
+                    // margin-left: 2rem;
+                }
+                .wave{
+                    // background-color: #05192C;
+                    text-align: right;
+                    img{
+                        width: 1.6rem;
+                    }
+                }
+
+                .terminal{
+                    // background-color: #05192C;
+                    img{
+                        width: 4.2rem;
+                    }
+                }
+
+
+                .hiddenpin{
+                    text-align: right;
+                    color: #fff;
+                    margin-right: .6rem;
+                    font-size: 1.2rem;
+                }
+
+                .cardnumber{
+                    width: 100%;
+                    font-size: 2rem;
+                    letter-spacing: .38rem;
+                    text-align: center;
+                    color: #fff;
+                    text-align: left;
+                   
+                }
+
+                .cardinfo{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+
+                    &__name{
+                        font-size: 1.25rem;
+                        color: #fff;
+                    }
+
+
+                    .cardinfo__validdate{
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        // font-size: 1rem;
+                        color: #fff;
+                        .validlbl{
+                            font-size: .7rem;
                         }
+                    }
+
+                    .cardtype{
+                        width: 5rem;
+                        margin-right: .5rem;
                     }
                 }
             }
-            
+
+
 
         }
         
