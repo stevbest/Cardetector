@@ -179,10 +179,10 @@ body .hero .containers .card .cardinfo .cardtype {
     padding-right: 0.8rem;
   }
   body .hero .containers .card .cardnumber {
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.15rem;
     width: 100%;
     background-color: red;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
   }
   body .hero .containers .card .wave img {
