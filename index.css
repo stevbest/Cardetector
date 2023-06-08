@@ -104,7 +104,6 @@ body .hero .containers .cardentry .btndetect:hover {
   border: none;
 }
 body .hero .containers .card {
-  display: none;
   width: 25rem;
   padding-left: 0.5rem;
   padding-right: 0.2rem;
@@ -166,4 +165,14 @@ body .hero .containers .card .cardinfo .cardinfo__validdate .validlbl {
 body .hero .containers .card .cardinfo .cardtype {
   width: 5rem;
   margin-right: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  body .hero .containers {
+    background-color: red;
+  }
+  body .hero .containers .card {
+    background-color: black;
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */
