@@ -1,203 +1,240 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  outline: none;
 }
 
 html {
   font-family: "Poppins", sans-serif, "Roboto";
-  font-size: 18px;
 }
 
+body {
+  font-size: 1.125rem;
+}
 body .hero {
+  height: 100vh;
   background: url("./painting-jungle-scene-with-green-plant-green-leafy-plant.jpg");
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
-  position: relative;
-  transition: all 0.5s ease-in-out;
+  background-position: bottom top;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-body .hero .containers {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   transition: all 0.5s ease;
 }
-body .hero .containers .title {
-  margin-bottom: 2rem;
+body .hero .container h1 {
+  transition: all 0.5s ease;
+  font-size: 3rem;
+  line-height: 1.3em;
   text-align: center;
-  color: #fff;
-  line-height: 2rem;
-  transition: all 0.5s ease;
-}
-body .hero .containers .title .titles {
-  font-size: 2rem;
   font-weight: 700;
-}
-body .hero .containers .title .author {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-body .hero .containers .cardentry {
-  margin-top: 3rem;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  justify-content: center;
-  width: 100%;
-}
-body .hero .containers .cardentry input {
-  padding: 1.2rem;
-  height: 3rem;
-  font-size: 1.14rem;
-  background: transparent;
-  border: none;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(0.2rem);
-          backdrop-filter: blur(0.2rem);
-  border-radius: 0.6rem;
-  text-align: center;
+  margin-bottom: 0.5em;
   color: #fff;
-  outline: none;
 }
-body .hero .containers .cardentry .txtcardno {
-  width: 14.7rem;
-}
-body .hero .containers .cardentry .txtcardsecpin {
-  width: 5rem;
-}
-body .hero .containers .cardentry input::-moz-placeholder {
-  color: rgb(255, 255, 255);
+body .hero .container h2 {
+  transition: all 0.5s ease;
+  font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 2em;
+  color: #fff;
 }
-body .hero .containers .cardentry input::placeholder {
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-body .hero .containers .cardentry .btndetect {
-  background-image: linear-gradient(to right, #f6d365 10%, #fda085 70%);
-  margin: 0;
-  padding: 0.7rem 2rem;
-  font-size: 1.1rem;
-  text-align: center;
-  border: none;
-  border-radius: 0.6rem;
-  color: #252525;
+body .container {
+  width: 95%;
+  max-width: 60rem;
+  margin: auto auto;
   transition: all 0.5s ease;
 }
-body .hero .containers .cardentry .btndetect:hover {
-  cursor: pointer;
-  border: none;
-}
-body .hero .containers .card {
-  display: none;
-  width: 25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.2rem;
-  padding-top: 0.4rem;
-  padding-bottom: 0.2rem;
-  background: url("./map1.png") no-repeat bottom;
-  -webkit-backdrop-filter: blur(0.42rem);
-          backdrop-filter: blur(0.42rem);
-  border: 0.15rem solid rgba(255, 255, 255, 0.3);
-  border-radius: 1.5rem;
-}
-body .hero .containers .card .creditcard {
-  font-size: 1.22rem;
-  font-weight: 600;
-  color: #fff;
-}
-body .hero .containers .card .wave {
-  text-align: right;
-}
-body .hero .containers .card .wave img {
-  width: 1.6rem;
-}
-body .hero .containers .card .terminal img {
-  width: 4.2rem;
-}
-body .hero .containers .card .hiddenpin {
-  text-align: right;
-  color: #fff;
-  margin-right: 0.6rem;
-  font-size: 1.2rem;
-}
-body .hero .containers .card .cardnumber {
-  width: 100%;
-  font-size: 2rem;
-  letter-spacing: 0.27rem;
-  text-align: center;
-  color: #fff;
-  text-align: left;
-}
-body .hero .containers .card .cardinfo {
+body .container .columns {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
-body .hero .containers .card .cardinfo__name {
-  font-size: 1.25rem;
-  color: #fff;
+body .container .columns .columns__entry {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0;
+  margin-right: 2em;
 }
-body .hero .containers .card .cardinfo .cardinfo__validdate {
+body .container .columns .columns__entry .box {
+  font-size: 1.1rem;
+  width: 70%;
+  margin-bottom: 1.5em;
+  padding: 0.7em 0.5em;
+  color: white;
+  border: none;
+  border-radius: 0.6em;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(20);
+          backdrop-filter: blur(20);
+  text-align: center;
+  outline-color: transparent;
+}
+body .container .columns .columns__entry .box::-moz-placeholder {
+  color: rgb(0, 0, 0);
+}
+body .container .columns .columns__entry .box::placeholder {
+  color: rgb(0, 0, 0);
+}
+body .container .columns .columns__entry .btnsubmit {
+  width: 55%;
+  padding: 0.75em 0;
+  border: none;
+  border-radius: 0.8em;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background: linear-gradient(45deg, rgb(255, 0, 212), rgb(7, 212, 212) 70%);
+  cursor: pointer;
+}
+body .container .columns .columns__entry .btnsubmit:active .btnsubmit:visited {
+  color: white;
+}
+body .container .columns .columns__card {
+  transition: all 0.5s ease;
+  background: rgba(185, 184, 184, 0.2);
+  -webkit-backdrop-filter: blur(0.2rem);
+          backdrop-filter: blur(0.2rem);
+  border: 0.12em solid rgba(255, 255, 255, 0.3);
+  border-radius: 1em;
+}
+body .container .columns .columns__card .card {
+  background: url("./map1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body .container .columns .columns__card .card .header_one img {
+  float: right;
+  width: 5%;
+}
+body .container .columns .columns__card .card .header_one h4 {
+  color: white;
+  font-size: clamp(0.5vw, 1.2rem, 1.3rem);
+  font-weight: 600;
+}
+body .container .columns .columns__card .card .content_one {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
+}
+body .container .columns .columns__card .card .content_one img {
+  width: 13%;
+}
+body .container .columns .columns__card .card .content_one p {
   color: #fff;
+  font-size: 1.2rem;
+  float: right;
+  margin-top: 1.7em;
 }
-body .hero .containers .card .cardinfo .cardinfo__validdate .validlbl {
-  font-size: 0.7rem;
+body .container .columns .columns__card .card .card_num {
+  margin-top: 0.5em;
+  color: #fff;
+  font-size: clamp(1vw, 5vw, 3rem);
 }
-body .hero .containers .card .cardinfo .cardtype {
-  width: 5rem;
-  margin-right: 0.5rem;
+body .container .columns .columns__card .card .content_two {
+  margin-top: 0.2em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container .columns .columns__card .card .content_two .card_name {
+  font-size: 1.7rem;
+  width: 60%;
+}
+body .container .columns .columns__card .card .content_two .validation_date {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  justify-content: flex-start;
+}
+body .container .columns .columns__card .card .content_two .validation_date .date {
+  margin-left: 0.3em;
+}
+body .container .columns .columns__card .card .content_two img {
+  width: 20%;
+}
+body .container .columns .columns__card {
+  transition: all 0.5s ease;
+  box-shadow: 0.2em 0.2em 1em rgba(255, 255, 255, 0.329);
+}
+body .container .col {
+  width: 100%;
 }
 
 @media (max-width: 480px) {
-  body .hero .containers .card {
-    width: 100%;
-    height: 15rem;
-    padding: 0;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+  body .container .columns {
+    flex-direction: column;
   }
-  body .hero .containers .card .cardnumber {
-    letter-spacing: 0.4rem;
-    width: 100%;
-    font-size: 6vw;
-    text-align: center;
+  body .container .columns .columns__entry {
+    margin-right: 0;
+    margin-top: 3em;
   }
-  body .hero .containers .card .wave img {
-    width: 1.2rem;
+  body .container .columns .columns__card .card .card_num {
+    font-size: 2.72rem;
   }
-  body .hero .containers .card .terminal img {
-    width: 3.2rem;
+  body .container .columns .columns__card {
+    order: -1;
   }
-  body .hero .containers .cardentry {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-areas: "tm1 tm2" "tm3 tm3";
-    gap: 2rem;
+  body .hero .container h1 {
+    font-size: clamp(7.2vw, 7vw, 2.2rem);
   }
-  body .hero .containers .cardentry .txtcardno {
-    grid-area: tm1;
+  body .container .columns .columns__entry .btnsubmit {
+    padding: 0.6em 0;
   }
-  body .hero .containers .cardentry .txtcardsecpin {
-    grid-area: tm2;
+}
+@media (max-width: 768px) {
+  body .container .columns .columns__card .card .header_one h4 {
+    font-size: clamp(2.7vw, 3vw, 1.5rem);
   }
-  body .hero .containers .cardentry .btndetect {
-    grid-area: tm3;
-    margin: 0 3rem;
+  body .container .columns {
+    flex-direction: column;
+  }
+  body .container .columns .columns__entry {
+    margin-right: 0;
+    margin-top: 3em;
+  }
+  body .container .columns .columns__card .card .card_num {
+    font-size: clamp(8vw, 8.1vw, 3.8rem);
+  }
+  body .container .columns .columns__card {
+    order: -1;
+  }
+  body .container .columns .card .validation_date p {
+    font-size: 1.2rem;
+  }
+  body .container .columns .content_two {
+    background-color: red;
+  }
+  body .container .columns .content_two .card_name {
+    background-color: black;
+  }
+  body .container .columns .content_two .validation_date {
+    width: 30%;
+  }
+  body .container .columns .content_two .validation_date .date {
+    margin-left: 35em;
+  }
+  body .container .columns .content_two img {
+    width: 70%;
+  }
+  body .container .col {
+    width: 85%;
+  }
+  body .container .columns .columns__entry .box {
+    padding: 0.6em 1em;
+    font-size: 1.5rem;
+    margin-bottom: 1.2em;
+  }
+  body .container .columns .columns__entry .btnsubmit {
+    padding: 0.5em 0.2em;
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -1,321 +1,387 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: none;
-    // overflow: hidden;
 }
 
 html{
     font-family: 'Poppins', sans-serif, 'Roboto';
-    font-size: 18px;
 }
 
 body{
-    .hero{
-        background: url('./painting-jungle-scene-with-green-plant-green-leafy-plant.jpg');
-        // width: 100%;
-        min-height: 100vh;
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top;
-        position: relative;
-        transition: all .5s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
 
-        .containers{
-            // margin: auto auto;
-           // background-color: black;
-            width: 95%;
+    // transition: all 0.5s ease;
+    font-size: 1.125rem;
+    .hero{
+        height: 100vh;
+        background: url('./painting-jungle-scene-with-green-plant-green-leafy-plant.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom top;
+        background-size: cover;
+        // margin: 0 auto;
+        display: flex;
+        transition: all 0.5s ease;
+
+
+        .container h1{
+            transition: all 0.5s ease;
+            // font-size: clamp(3vw, 2vw, 10rem);
+            font-size: 3rem;
+            line-height: 1.3em;
+            text-align:center;
+            font-weight: 700;
+            margin-bottom: .5em;
+            color: #fff;
+        }
+
+        .container h2{
+            transition: all 0.5s ease;
+            font-size: 1.5rem;
+            text-align:center;
+            margin-bottom: 2em;
+            color: #fff;
+        }
+    }
+
+
+    .container{
+
+        //background-color: aqua;
+        width: 95%;
+        max-width: 60rem;
+        margin: auto auto;
+        transition: all 0.5s ease;
+    }
+
+
+
+
+
+    .container .columns{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        // transition: all 0.5s ease;
+        .columns__entry{
+            transition: all 0.5s ease;
+            // background-color: rgb(6, 27, 27);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            transition: all 0.5s ease;
-            // padding: .5rem 0 ;
-
-
-            .title{
-                margin-bottom: 2rem;
+            //width: 40%;
+            padding: 1em 0;
+            margin-right: 2em;
+            // margin-right: ;
+            .box{
+                font-size: 1.1rem;
+                width: 70%;
+                margin-bottom: 1.5em;
+                padding: .7em .5em;
+                color: white;
+                border: none;
+                // border: .12em solid rgba(255, 255, 255, 1);
+                border-radius: .6em;
+                background: rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(20);
                 text-align: center;
-                color: #fff;
-                line-height: 2rem;
-                transition: all .5s ease;
-            .titles{
-                font-size: 2rem;
-                font-weight: 700;
+                outline-color: transparent;
+            }
+            .box::placeholder{
+                color: rgb(0, 0, 0);
             }
 
-            .author{
-                font-size: 1.5rem;
-                font-weight: 500;
+            .btnsubmit{
+                width: 55%;
+                padding: .75em 0;
+                border: none;
+                border-radius: .8em;
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                background: linear-gradient(45deg, rgb(255, 0, 212), rgb(7, 212, 212) 70%);
+                cursor: pointer;
             }
-        
-    
-        
-            }
-
-            //card details
-            .cardentry{
-                //background-color: rgb(192, 19, 19);
-                margin-top: 3rem;
-                display: flex;
-                align-items: center;
-                gap:1.5rem;
-                justify-content: center;
-                width: 100%;
-                input{
-                    padding: 1.2rem;
-                    height: 3rem;
-                    font-size: 1.14rem;
-                    background: transparent;
-                    border: none;
-                    background: rgba(255, 255, 255, 0.1);
-                    backdrop-filter: blur(.2rem);
-                    border-radius: .6rem;
-                    text-align: center;
-                    color: #fff;
-                    outline: none;
-                }
-                
-                .txtcardno{
-                    width: 14.7rem;
-                    
-                }
-
-                .txtcardsecpin{
-                    width: 5rem;
-                    
-                }
-
-                input::placeholder{
-                    color: rgb(255, 255, 255);
-                    text-align: center;
-                }
-
-                .btndetect{
-                    background-image: linear-gradient(to right, #f6d365 10%, #fda085 70%);
-                    
-                    margin: 0;
-                    padding: .7rem 2rem;
-                    font-size: 1.1rem;
-                    text-align: center;
-                    border: none;
-                    border-radius: .6rem;
-                    // border: .13rem solid rgba(255, 255, 255, 0.3);
-                    // backdrop-filter: blur(9rem);
-                    color: #252525;
-                    transition: all 0.5s ease;
-                    //box-shadow: .1rem .3rem .7rem rgba(253, 160, 133, .8);
-                }
-                .btndetect:hover{
-                    cursor: pointer;
-                    // background: rgba(255, 255, 255, 0.1);
-                    // backdrop-filter: blur(.2rem);
-                    border: none;
-                }
-
-
+            .btnsubmit:active .btnsubmit:visited{
+                color: white;
             }
 
+        }
+
+
+
+        .columns__card{
+
+            transition: all 0.5s ease;
+            // background-position: bottom center;
+            // margin-right: 1rem;
+            background: rgba(185, 184, 184, 0.2);
+            backdrop-filter: blur(.2rem);
+
+            border: .12em solid rgba(255, 255, 255, 0.3);
+            border-radius: 1em;
 
 
             .card{
-                display: none;
-                width: 25rem;
-                padding-left: .5rem;
-                padding-right: .2rem;
-                padding-top: .4rem;
-                padding-bottom: .2rem;
-                // padding: 1rem 1rem 2rem;
-                background:url('./map1.png') no-repeat bottom;
-                backdrop-filter: blur(.42rem);
-                border: .15rem solid rgba(255, 255, 255, 0.3);
-                border-radius: 1.5rem;
-                // filter: none;
 
-                
-                .creditcard{
-                    font-size: 1.22rem;
-                    font-weight: 600;
-                    // color: #05192C;
-                    color: #fff;
-                    // margin-left: 2rem;
-                }
-                .wave{
-                    // background-color: #05192C;
-                    text-align: right;
+                background: url('./map1.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                padding: 1em;
+
+                // border: none;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .header_one{
+                    // background-color: aquamarine;
                     img{
-                        width: 1.6rem;
+                        float: right;
+                        width: 5%;
                     }
-                }
-
-                .terminal{
-                    // background-color: #05192C;
-                    img{
-                        width: 4.2rem;
+                    h4{
+                        color: white;
+                        // font-size: 1.2rem;
+                        font-size: clamp(
+                            .5vw,
+                            1.2rem,
+                            1.3rem
+                        );
+                        font-weight: 600;
                     }
+                    // margin-bottom: .5em;
                 }
 
-
-                .hiddenpin{
-                    text-align: right;
-                    color: #fff;
-                    margin-right: .6rem;
-                    font-size: 1.2rem;
-                }
-
-                .cardnumber{
-                    width: 100%;
-                    font-size: 2rem;
-                    letter-spacing: .27rem;
-                    text-align: center;
-                    color: #fff;
-                    text-align: left;
-                   
-                }
-
-                .cardinfo{
+                .content_one{
                     display: flex;
-                    flex-direction: row;
+
+                    //background-color: black;
                     align-items: center;
                     justify-content: space-between;
-
-
-                    &__name{
-                        font-size: 1.25rem;
+                    img{
+                        width: 13%;
+                    }
+                    p{
                         color: #fff;
+                        font-size: 1.2rem;
+                        float:  right;
+                        margin-top: 1.7em;
                     }
 
 
-                    .cardinfo__validdate{
+                }
+
+
+                .card_num{
+                    margin-top: .5em;
+                    color: #fff;
+                    font-size: clamp(1vw, 5vw, 3rem);
+                }
+
+
+                .content_two{
+                    margin-top: .2em;
+                    color: #fff;
+                    // background-color: aquamarine;
+                    // ;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .card_name{
+                        font-size: 1.7rem;
+                        // font-size: clamp(1rem, 1.8vw, 3rem);
+                        width: 60%;
+                        // background-color: black;
+                    }
+
+                    .validation_date{
                         display: flex;
+                        width: 20%;
                         align-items: center;
-                        gap: .5rem;
-                        // font-size: 1rem;
-                        color: #fff;
-                        .validlbl{
-                            font-size: .7rem;
+                        font-size: .8rem;
+                        font-weight: 600;
+                        justify-content: flex-start;
+                        .date{
+                            margin-left: .3em   ;
                         }
+
+
+
                     }
 
-                    .cardtype{
-                        width: 5rem;
-                        margin-right: .5rem;
+                    img{
+                        width: 20%;
                     }
+
+
+
                 }
             }
 
 
 
+
         }
-        
-    }
-}
 
-$bp : (
-    mobile:480px,
-    tablet:768px,
-);
-@mixin query ($screen){
-    @each $key, $value in $bp{
-        @if($key == $screen){
-            @media (max-width:$value) {
-                @content;
-            }
+        .columns__card{
+            transition: all 0.5s ease;
+            box-shadow: .2em .2em 1em rgba(255, 255, 255, 0.329);
         }
+
+
     }
-}
 
-
-@include query(mobile){
-
-    body .hero .containers{
-        //background-color: red;
-    }
-    body .hero .containers .card{
-        //background-color: black;
+    .container .col{
+        // transition: all 0.5s ease;
         width: 100%;
-        height: 15rem;
-        padding: 0;
-        padding-left: .8rem;
-        padding-right: .8rem;
-
-        .cardnumber{
-            letter-spacing: .4rem;
-            width: 100%;
-            //background-color: red;
-            font-size: 6vw;
-            text-align: center;
-        }
-
-        .wave{
-            // background-color: red;
-            img{
-                width: 1.2rem;
-            }
-        }
-
-        .hiddenpin{
-            // background-color: aquamarine;
-           
-        }
-
-        .terminal{
-            // background-color: aqua;
-            img{
-                width: 3.2rem;
-            }
-            
-        }
+        // padding: 1em;
+        // background: red;
     }
 
 
-    body .hero .containers .cardentry{
-        // background-color: rgb(192, 19, 19);
-        
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        grid-template-areas: "tm1 tm2"
-         "tm3 tm3";
 
-        gap: 2rem;
 
-        .txtcardno{
-            grid-area: tm1;
-            // width: 15rem;
+}
+
+// $bp : (
+//     mobile:480px,
+//     tablet:768px,
+// );
+
+
+// @mixin query ($screen){
+//     @each $key, $value in $bp{
+//         @if($key == $screen){
+//             @media (max-width:$value) {
+//                 @content;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+@media (max-width: 480px){
+    body .container .columns{
+        flex-direction: column;
+
+        .columns__entry{
+            margin-right: 0;
+            margin-top: 3em;
         }
-        .txtcardsecpin{
-            grid-area: tm2;
-            // width: 5rem;
+
+        .columns__card .card .card_num{
+            //font-size: clamp(8vw, 7vw, 2.72rem);
+            font-size: 2.72rem;
         }
-        .btndetect{
-            // margin-top: 4rem;
-            grid-area: tm3;
-            margin: 0 3rem;
-            // background-color: ;
+
+        .columns__card{
+            // display: none;
+            order: -1;
         }
-        
     }
+
+    body .hero {
+        .container h1{
+            // transition: all 0.5s ease;
+            font-size: clamp(7.2vw, 7vw, 2.2rem);
+            // font-size: 2.2rem;
+        }
+        // background-color: #fff;
+    }
+
+
+    body .container .columns{
+        .columns__entry{
+            .btnsubmit{
+                padding: .6em 0;
+            }
+
+        }
+    };
 
 }
 
 
 
+@media (max-width: 768px){
+
+    body .container .columns .columns__card
+    .card .header_one h4{
+        font-size: clamp(2.7vw, 3vw, 1.5rem);
+        // font-size: 1.5rem;
+    }
+    body .container .columns{
+        flex-direction: column;
+
+        .columns__entry{
+            margin-right: 0;
+            margin-top: 3em;
+        }
+
+        .columns__card .card .card_num{
+            font-size: clamp(8vw, 8.1vw, 3.8rem);
+            // font-size: 3.8rem;
+        }
+
+        .columns__card{
+            // display: none;
+            order: -1;
+        }
+
+        .card .validation_date{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+
+        .content_two{
+            background-color: red;
+            .card_name{
+                background-color: black;
+            }
+
+            .validation_date{
+                width: 30%;
+                .date{
+                    margin-left: 35em  ;
+                }
 
 
 
+            }
+
+            img{
+                width: 70%;
+            }
 
 
 
+        }
+    }
+
+    body .container .col{
+        width: 85%;
+    }
 
 
 
-// font-family: 'Poppins', sans-serif;
-// font-family: 'Roboto', sans-serif;
-// font-family: 'Satisfy', cursive;
+    body .container .columns
+    .columns__entry .box{
+        padding: .6em 1em;
+        font-size: 1.5rem;
+        margin-bottom: 1.2em;
+    }
+
+
+    body .container .columns
+    .columns__entry .btnsubmit{
+        padding: .5em .2em  ;
+        font-size: 1.5rem;
+    }
+
+}
+
