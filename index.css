@@ -1,240 +1,28 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Poppins", sans-serif, "Roboto";
-}
-
-body {
-  font-size: 1.125rem;
-}
 body .hero {
-  height: 100vh;
-  background: url("./painting-jungle-scene-with-green-plant-green-leafy-plant.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom top;
-  background-size: cover;
-  display: flex;
-  transition: all 0.5s ease;
-}
-body .hero .container h1 {
-  transition: all 0.5s ease;
-  font-size: 3rem;
-  line-height: 1.3em;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-  color: #fff;
-}
-body .hero .container h2 {
-  transition: all 0.5s ease;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 2em;
-  color: #fff;
+  background-color: green;
+  height: 200px;
 }
 body .container {
-  width: 95%;
-  max-width: 60rem;
-  margin: auto auto;
-  transition: all 0.5s ease;
-}
-body .container .columns {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-body .container .columns .columns__entry {
-  transition: all 0.5s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em 0;
-  margin-right: 2em;
-}
-body .container .columns .columns__entry .box {
-  font-size: 1.1rem;
-  width: 70%;
-  margin-bottom: 1.5em;
-  padding: 0.7em 0.5em;
-  color: white;
-  border: none;
-  border-radius: 0.6em;
-  background: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(20);
-          backdrop-filter: blur(20);
-  text-align: center;
-  outline-color: transparent;
-}
-body .container .columns .columns__entry .box::-moz-placeholder {
-  color: rgb(0, 0, 0);
-}
-body .container .columns .columns__entry .box::placeholder {
-  color: rgb(0, 0, 0);
-}
-body .container .columns .columns__entry .btnsubmit {
-  width: 55%;
-  padding: 0.75em 0;
-  border: none;
-  border-radius: 0.8em;
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  background: linear-gradient(45deg, rgb(255, 0, 212), rgb(7, 212, 212) 70%);
-  cursor: pointer;
-}
-body .container .columns .columns__entry .btnsubmit:active .btnsubmit:visited {
-  color: white;
-}
-body .container .columns .columns__card {
-  transition: all 0.5s ease;
-  background: rgba(185, 184, 184, 0.2);
-  -webkit-backdrop-filter: blur(0.2rem);
-          backdrop-filter: blur(0.2rem);
-  border: 0.12em solid rgba(255, 255, 255, 0.3);
-  border-radius: 1em;
-}
-body .container .columns .columns__card .card {
-  background: url("./map1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-body .container .columns .columns__card .card .header_one img {
-  float: right;
-  width: 5%;
-}
-body .container .columns .columns__card .card .header_one h4 {
-  color: white;
-  font-size: clamp(0.5vw, 1.2rem, 1.3rem);
-  font-weight: 600;
-}
-body .container .columns .columns__card .card .content_one {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-body .container .columns .columns__card .card .content_one img {
-  width: 13%;
-}
-body .container .columns .columns__card .card .content_one p {
-  color: #fff;
-  font-size: 1.2rem;
-  float: right;
-  margin-top: 1.7em;
-}
-body .container .columns .columns__card .card .card_num {
-  margin-top: 0.5em;
-  color: #fff;
-  font-size: clamp(1vw, 5vw, 3rem);
-}
-body .container .columns .columns__card .card .content_two {
-  margin-top: 0.2em;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-body .container .columns .columns__card .card .content_two .card_name {
-  font-size: 1.7rem;
-  width: 60%;
-}
-body .container .columns .columns__card .card .content_two .validation_date {
-  display: flex;
-  width: 20%;
-  align-items: center;
-  font-size: 0.8rem;
-  font-weight: 600;
-  justify-content: flex-start;
-}
-body .container .columns .columns__card .card .content_two .validation_date .date {
-  margin-left: 0.3em;
-}
-body .container .columns .columns__card .card .content_two img {
-  width: 20%;
-}
-body .container .columns .columns__card {
-  transition: all 0.5s ease;
-  box-shadow: 0.2em 0.2em 1em rgba(255, 255, 255, 0.329);
-}
-body .container .col {
-  width: 100%;
+  height: 100px;
+  background-color: skyblue;
+  margin: 0 auto;
 }
 
-@media (max-width: 480px) {
-  body .container .columns {
-    flex-direction: column;
-  }
-  body .container .columns .columns__entry {
-    margin-right: 0;
-    margin-top: 3em;
-  }
-  body .container .columns .columns__card .card .card_num {
-    font-size: 2.72rem;
-  }
-  body .container .columns .columns__card {
-    order: -1;
-  }
-  body .hero .container h1 {
-    font-size: clamp(7.2vw, 7vw, 2.2rem);
-  }
-  body .container .columns .columns__entry .btnsubmit {
-    padding: 0.6em 0;
-  }
-}
 @media (max-width: 768px) {
-  body .container .columns .columns__card .card .header_one h4 {
-    font-size: clamp(2.7vw, 3vw, 1.5rem);
-  }
-  body .container .columns {
-    flex-direction: column;
-  }
-  body .container .columns .columns__entry {
-    margin-right: 0;
-    margin-top: 3em;
-  }
-  body .container .columns .columns__card .card .card_num {
-    font-size: clamp(8vw, 8.1vw, 3.8rem);
-  }
-  body .container .columns .columns__card {
-    order: -1;
-  }
-  body .container .columns .card .validation_date p {
-    font-size: 1.2rem;
-  }
-  body .container .columns .content_two {
-    background-color: red;
-  }
-  body .container .columns .content_two .card_name {
+  body .hero .container {
+    width: 95%;
     background-color: black;
   }
-  body .container .columns .content_two .validation_date {
-    width: 30%;
-  }
-  body .container .columns .content_two .validation_date .date {
-    margin-left: 35em;
-  }
-  body .container .columns .content_two img {
-    width: 70%;
-  }
-  body .container .col {
-    width: 85%;
-  }
-  body .container .columns .columns__entry .box {
-    padding: 0.6em 1em;
-    font-size: 1.5rem;
-    margin-bottom: 1.2em;
-  }
-  body .container .columns .columns__entry .btnsubmit {
-    padding: 0.5em 0.2em;
-    font-size: 1.5rem;
+}
+@media (max-width: 480px) {
+  body .hero .container {
+    width: 95%;
+    background-color: red;
   }
 }/*# sourceMappingURL=index.css.map */
