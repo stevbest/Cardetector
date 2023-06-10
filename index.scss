@@ -20,16 +20,26 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 18px;
+}
+
 body{
     .hero{
         background-color:green;
-        height: 200px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .container{
-        height: 100px;
+        // height: 100px;
         background-color: skyblue;
         margin: 0 auto;
+        padding: 2.5em 0;
+        // margin: .1em;
     }
 
 }
