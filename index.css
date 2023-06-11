@@ -81,6 +81,10 @@ body .wrapper .card_container .card_entry .btn_check {
   text-align: center;
   background: linear-gradient(45deg, #924E99, #1C2C67);
   border-radius: 0.7em;
+  transition: hover 2s step-end;
+}
+body .wrapper .card_container .card_entry .btn_check:hover {
+  background: linear-gradient(45deg, #1C2C67, #924E99);
 }
 body .wrapper .card_container .card_entry .btn_check:active, body .wrapper .card_container .card_entry .btn_check:visited {
   color: #fff;
@@ -127,8 +131,8 @@ body .wrapper .card_container .card_display .card__centre .centre__secpin {
 body .wrapper .card_container .card_display .centre__cardno {
   font-weight: 700;
   margin: 0.5em 0;
-  font-size: 2rem;
-  letter-spacing: 0.23em;
+  text-align: justify;
+  font-size: 2.55vw;
 }
 body .wrapper .card_container .card_display .card__bottom {
   border-top: 0.07em solid rgba(146, 78, 153, 0.5);
@@ -187,7 +191,7 @@ body .wrapper .card_container .card_display .card__bottom img {
     width: 90%;
   }
   body .wrapper .card_container .card_display .centre__cardno {
-    font-size: 1.7rem;
+    font-size: 8.8vw;
   }
   body .wrapper .card_container .card_display .card__bottom .cardname {
     font-size: 1.1rem;

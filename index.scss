@@ -101,7 +101,12 @@ body{
                     text-align: center;
                     background: linear-gradient(45deg, #924E99, #1C2C67);
                     border-radius: .7em;
-                    // transition: bac .5s ease-in;
+                    transition: hover 2s step-end;
+
+               }
+               .btn_check:hover{
+                    background: linear-gradient(45deg, #1C2C67 , #924E99);
+                    
                }
                .btn_check:active, .btn_check:visited{
                     color: #fff;
@@ -165,8 +170,11 @@ body{
                     // background-color:#1c2c6769;
                     font-weight: 700;
                     margin: .5em 0;
-                    font-size: 2rem;
-                    letter-spacing: 0.23em;
+                    // font-size: 2.5rem;
+                    // width: 100%;
+                    text-align: justify;
+                    font-size: clamp(1.5vw, 5vw, 2.55vw );
+                    // letter-spacing: 0.23em;
                 }
 
                 .card__bottom{
@@ -348,10 +356,12 @@ $bp: (mobile:480px, tablet:768px,);
                     // }
     
                     .centre__cardno{
-                        // background-color:#1c2c6769;
+                        // background-color
+                        font-size: clamp(5vw, 10vw, 8.8vw );
+                        // :#1c2c6769;
                         // font-weight: 700;
                         // margin: .5em 0;
-                        font-size: 1.7rem;
+                        // font-size: 1.7rem;
                         // letter-spacing: 0.23em;
                     }
     
