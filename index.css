@@ -4,189 +4,203 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Poppins", sans-serif, "Roboto";
-  font-size: 18px;
+html, body {
+  font-size: 1.125rem;
 }
 
 body {
-  background: url("/13182208_5166950.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top left;
+  font-family: "Roboto", sans-serif;
   height: 100vh;
-}
-
-body {
+  background: url("./13182208_5166950.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 body .wrapper {
-  transition: all 0.5s ease;
   margin: 0 auto;
   width: 80%;
 }
-body .wrapper__header {
-  margin-bottom: 5em;
-}
-body .wrapper__header .title {
-  text-align: center;
-  font-size: 2.5rem;
+body .wrapper h1, body .wrapper h3 {
   color: #fff;
+  text-align: center;
   margin-bottom: 0.5em;
 }
-body .wrapper__header .author {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #fff;
+body .wrapper h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
 }
-body .wrapper__cardentry {
+body .wrapper h3 {
+  font-size: 1.4rem;
+}
+body .wrapper .card_container {
+  margin-top: 5em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-items: center;
+  transition: all 0.5s ease;
 }
-body .wrapper__cardentry .cardentry__entry {
+body .wrapper .card_container .card_entry {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  padding: 0.8em 0;
 }
-body .wrapper__cardentry .cardentry__entry .box {
+body .wrapper .card_container .card_entry .box {
+  transition: all 0.5s ease;
   font-size: 1rem;
   width: 55%;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   text-align: center;
   padding: 0.7em 0.5em;
   color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(45deg, rgba(144, 78, 151, 0.205), rgba(8, 25, 87, 0.432));
+  -webkit-backdrop-filter: blur(0.1em);
+          backdrop-filter: blur(0.1em);
   border: none;
-  outline-width: 1;
-  outline-color: aliceblue;
+  outline-style: dashed;
+  outline-width: 0.1em;
+  outline-color: #924E99;
   border-radius: 0.5em;
 }
-body .wrapper__cardentry .cardentry__entry .box::-moz-placeholder {
+body .wrapper .card_container .card_entry .box::-moz-placeholder {
   color: #fff;
 }
-body .wrapper__cardentry .cardentry__entry .box::placeholder {
+body .wrapper .card_container .card_entry .box::placeholder {
   color: #fff;
 }
-body .wrapper__cardentry .cardentry__entry .btn_check {
+body .wrapper .card_container .card_entry .btn_check {
   color: #fff;
   text-decoration: none;
   width: 40%;
   font-size: 1.01rem;
-  padding: 0.5em 0.12em;
+  padding: 0.7em 0.12em;
   text-align: center;
   background: linear-gradient(45deg, #924E99, #1C2C67);
   border-radius: 0.7em;
 }
-body .wrapper__cardentry .cardentry__entry .btn_check:active {
+body .wrapper .card_container .card_entry .btn_check:active, body .wrapper .card_container .card_entry .btn_check:visited {
   color: #fff;
 }
-body .wrapper__cardentry .cardentry__entry .btn_check:visited {
-  color: #fff;
-}
-body .wrapper__cardentry .cardentry__card {
+body .wrapper .card_container .card_display {
   color: #fff;
   padding: 1em 1em;
   width: 65%;
-  background: url("./map1.png");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: rgba(216, 213, 213, 0.336);
-  -webkit-backdrop-filter: blur(50);
-          backdrop-filter: blur(50);
-  border: none;
-  border-radius: 1.5em;
+  transition: all 0.5s ease;
+  background: linear-gradient(45deg, rgba(144, 78, 151, 0.388), rgba(8, 25, 87, 0.678));
+  -webkit-backdrop-filter: blur(0.1em);
+          backdrop-filter: blur(0.1em);
+  border-style: solid;
+  border-width: 0.13em;
+  border-color: rgba(255, 255, 255, 0.185);
+  border-radius: 1.2em;
 }
-body .wrapper__cardentry .cardentry__card .top__cardtitle {
-  font-size: 1.01rem;
-  font-weight: 600;
+body .wrapper .card_container .card_display .top__cardtitle {
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-body .wrapper__cardentry .cardentry__card .top__cardtitle span {
-  float: right;
+body .wrapper .card_container .card_display .top__cardtitle p {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
-body .wrapper__cardentry .cardentry__card .top__cardtitle span img {
-  width: 70%;
+body .wrapper .card_container .card_display .top__cardtitle img {
+  width: 5%;
 }
-body .wrapper__cardentry .cardentry__card .card__centre {
+body .wrapper .card_container .card_display .card__centre {
   display: flex;
   align-items: end;
   justify-content: space-between;
   margin-top: 2em;
 }
-body .wrapper__cardentry .cardentry__card .card__centre img {
-  width: 12%;
+body .wrapper .card_container .card_display .card__centre img {
+  width: 13%;
 }
-body .wrapper__cardentry .cardentry__card .card__centre .centre__secpin {
+body .wrapper .card_container .card_display .card__centre .centre__secpin {
   float: right;
   font-size: 1.2rem;
 }
-body .wrapper__cardentry .cardentry__card .centre__cardno {
+body .wrapper .card_container .card_display .centre__cardno {
   font-weight: 700;
   margin: 0.5em 0;
-  font-size: 2.85rem;
+  font-size: 2rem;
+  letter-spacing: 0.23em;
 }
-body .wrapper__cardentry .cardentry__card .card__bottom {
+body .wrapper .card_container .card_display .card__bottom {
+  border-top: 0.07em solid rgba(146, 78, 153, 0.5);
+  padding-top: 0.2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body .wrapper__cardentry .cardentry__card .card__bottom .cardname {
+body .wrapper .card_container .card_display .card__bottom .cardname {
   font-size: 1.2rem;
   font-weight: 600;
   width: 40%;
 }
-body .wrapper__cardentry .cardentry__card .card__bottom .validdate {
+body .wrapper .card_container .card_display .card__bottom .validdate {
   font-weight: 600;
   font-size: 0.8em;
   display: flex;
   align-items: center;
 }
-body .wrapper__cardentry .cardentry__card .card__bottom .validdate .lbldate {
+body .wrapper .card_container .card_display .card__bottom .validdate .lbldate {
   margin-left: 0.3em;
 }
-body .wrapper__cardentry .cardentry__card .card__bottom img {
+body .wrapper .card_container .card_display .card__bottom img {
   width: 17%;
+  opacity: 0.6;
 }
 
 @media (max-width: 480px) {
   body .wrapper {
     width: 100%;
   }
-  body .wrapper__header .title {
-    font-size: 2.5rem;
-    margin-bottom: 0.4em;
-    line-height: 1;
-  }
-  body .wrapper__header .author {
-    font-size: 1.2rem;
-    margin-bottom: 2em;
-  }
-  body .wrapper__cardentry {
-    grid-template-columns: 1fr;
-  }
-  body .wrapper__cardentry .cardentry__entry {
-    width: 100%;
-    padding: 2em 0;
-  }
-  body .wrapper__cardentry .cardentry__entry .box {
-    width: 70%;
-    margin-bottom: 2em;
-  }
-  body .wrapper__cardentry .cardentry__entry .btn_check {
-    width: 50%;
-    font-size: 1.128rem;
-  }
-  body .wrapper__cardentry .cardentry__card {
-    width: 95%;
-  }
-  body .wrapper__cardentry .cardentry__card .centre__cardno {
+  body .wrapper h1 {
     font-size: 2.4rem;
+    font-weight: 600;
+  }
+  body .wrapper h3 {
+    font-size: 1.3rem;
+  }
+  body .wrapper .card_container {
+    margin-top: 3em;
+    grid-template-columns: 1fr;
+    place-content: center;
+  }
+  body .wrapper .card_container .card_entry {
+    width: 100%;
+  }
+  body .wrapper .card_container .card_entry .box {
+    width: 65%;
+  }
+  body .wrapper .card_container .card_entry .btn_check {
+    width: 45%;
+  }
+  body .wrapper .card_container .card_display {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 90%;
+  }
+  body .wrapper .card_container .card_display .centre__cardno {
+    font-size: 1.7rem;
+  }
+  body .wrapper .card_container .card_display .card__bottom .cardname {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  body .wrapper .card_container .card_display .card__bottom .validdate {
+    font-weight: 500;
+    font-size: 0.6em;
+  }
+  body .wrapper .card_container .card_display .card__bottom .validdate .lbldate {
+    margin-left: 0.4em;
+  }
+  body .wrapper .card_container .card_display .card__bottom img {
+    width: 17%;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -15,45 +15,42 @@
 <body>
     <div class="wrapper">
         
-        <div class="wrapper__header">
-            <h1 class="title">CREDIT CARD DETECTOR</h1>
-            <h3 class="author">by Monday S. O.</h3>
-        </div>
+        <h1 class="title">CREDIT CARD DETECTOR</h1>
+        <h3 class="author">by Monday S. O.</h3>
 
+        <div class="card_container">
 
-        <div class="wrapper__cardentry">
-
-            <div class="cardentry__entry">
-                <input type="text" class="card_no box" id="card_no" placeholder="Enter Card No.">
-                <input type="text" class="card_sec box" id="card_sec" placeholder="Enter Back Pin">
-                <a href="#" class="btn_check" id="btn_check">Detect</a>
+            <!-- card entry -->
+            <div class="card_entry">
+                    <input type="text" class="card_no box" id="card_no" placeholder="Enter Card No.">
+                    <input type="text" class="card_sec box" id="card_sec" placeholder="Enter Back Pin">
+                    <a href="#" class="btn_check" id="btn_check">Detect</a>
             </div>
 
-            <div class="cardentry__card">
-                <p class="top__cardtitle">CREDIT CARD
-                    <span class="top__wave">
-                        <img src="./wave.png" alt="wave">
-                    </span>
-                </p>
-
-                <div class="card__centre">
-                    <img src="./terminal.png" alt="" class="centre__terminal">
-                    <p class="centre__secpin">000</p>
-                </div>
-
-                <div class="carno">
-                    <p class="centre__cardno">5485645875458645</p>
-                </div>
-                
-                <div class="card__bottom">
-                    <p class="cardname">MONDAY S. O.</p>
-                    <p class="validdate">
-                        <span class="lbl">VALID <br> DATE</span>
-                        <span class="lbldate">11/28</span>
-                    </p>
-                    <img src="./card_type.png" alt="" class="cardtype">
-                </div>
-
+            <!-- display card -->
+            <div class="card_display">
+                    <div class="top__cardtitle">
+                        <p>CREDIT CARD</p>
+                        <img src="./wave.png" alt="wave" class="top__wave">
+                    </div>
+    
+                    <div class="card__centre">
+                        <img src="./terminal.png" alt="" class="centre__terminal">
+                        <p class="centre__secpin">000</p>
+                    </div>
+    
+                    <div class="carno">
+                        <p class="centre__cardno">5485645875458645</p>
+                    </div>
+                    
+                    <div class="card__bottom">
+                        <p class="cardname">MONDAY S. O.</p>
+                        <p class="validdate">
+                            <span class="lbl">VALID <br> DATE</span>
+                            <span class="lbldate">11/28</span>
+                        </p>
+                        <img src="./card_type.png" alt="" class="cardtype">
+                    </div>
             </div>
 
         </div>
