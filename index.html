@@ -21,14 +21,14 @@
         <div class="card_container">
 
             <!-- card entry -->
-            <div class="card_entry">
+            <div class="card_entry" id="card_entry">
                     <input type="text" class="card_no box" id="card_no" placeholder="Enter Card No.">
                     <input type="text" class="card_sec box" id="card_sec" placeholder="Enter Back Pin">
                     <a href="#" class="btn_check" id="btn_check">Detect</a>
             </div>
 
             <!-- display card -->
-            <div class="card_display">
+            <div class="card_display" id="card_display">
                     <div class="top__cardtitle">
                         <p>CREDIT CARD</p>
                         <img src="./wave.png" alt="wave" class="top__wave">
@@ -36,15 +36,15 @@
     
                     <div class="card__centre">
                         <img src="./terminal.png" alt="" class="centre__terminal">
-                        <p class="centre__secpin">000</p>
+                        <p class="centre__secpin" id="centre__secpin"></p>
                     </div>
     
                     <div class="carno">
-                        <p class="centre__cardno">5485645875458645</p>
+                        <p class="centre__cardno" id="centre__cardno"></p>
                     </div>
                     
                     <div class="card__bottom">
-                        <p class="cardname">MONDAY S. O.</p>
+                        <p class="cardname" id="cardname"></p>
                         <p class="validdate">
                             <span class="lbl">VALID <br> DATE</span>
                             <span class="lbldate">11/28</span>
@@ -56,5 +56,7 @@
         </div>
        
     </div>
+
+    <script src="./index.mjs"></script>
 </body>
 </html>

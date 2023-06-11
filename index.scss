@@ -55,14 +55,16 @@ body{
         .card_container{
             margin-top: 5em;
             // background-color: #0113417e;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // place-content: center;
             transition: all 0.5s ease;
             //setting typing area of card
             .card_entry{
                 // background-color: #924e9957;
-                width: 70%;
+                width: 45%;
                 margin: 0 auto;
                 display: flex;
                 flex-direction: column;
@@ -116,9 +118,10 @@ body{
 
             //setting card display area
             .card_display{
+                display: none;
                 color: #fff;
                 padding: 1em 1em;
-                width: 65%;
+                width: 35%;
                 transition: all .5s ease;
                 // background: url('./map1.png');
                 // background-position: top center;
@@ -173,7 +176,7 @@ body{
                     // font-size: 2.5rem;
                     // width: 100%;
                     text-align: justify;
-                    font-size: clamp(1.5vw, 5vw, 2.55vw );
+                    font-size: clamp(2vw, 5vw, 2.75vw );
                     // letter-spacing: 0.23em;
                 }
 
