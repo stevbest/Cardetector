@@ -160,6 +160,54 @@ body .wrapper .card_container .card_display .card__bottom img {
   opacity: 0.6;
 }
 
+@media (max-width: 768px) {
+  body .wrapper {
+    width: 100%;
+  }
+  body .wrapper h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  body .wrapper h3 {
+    font-size: 1.4rem;
+  }
+  body .wrapper .card_container {
+    margin-top: 3em;
+    grid-template-columns: 1fr;
+    place-content: center;
+  }
+  body .wrapper .card_container .card_entry {
+    width: 100%;
+  }
+  body .wrapper .card_container .card_entry .box {
+    width: 50%;
+  }
+  body .wrapper .card_container .card_entry .btn_check {
+    width: 35%;
+  }
+  body .wrapper .card_container .card_display {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 65%;
+  }
+  body .wrapper .card_container .card_display .centre__cardno {
+    font-size: 6.5vw;
+  }
+  body .wrapper .card_container .card_display .card__bottom .cardname {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  body .wrapper .card_container .card_display .card__bottom .validdate {
+    font-weight: 500;
+    font-size: 0.6em;
+  }
+  body .wrapper .card_container .card_display .card__bottom .validdate .lbldate {
+    margin-left: 0.4em;
+  }
+  body .wrapper .card_container .card_display .card__bottom img {
+    width: 17%;
+  }
+}
 @media (max-width: 480px) {
   body .wrapper {
     width: 100%;
