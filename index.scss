@@ -238,7 +238,7 @@ $bp: (mobile:480px, tablet:768px,);
 }
 
 
-//media query for screen below table 768 pixels
+// //media query for screen below table 768 pixels
 @include query(tablet){
     body{
         .wrapper{
@@ -315,6 +315,85 @@ $bp: (mobile:480px, tablet:768px,);
         }
     }
 }
+
+@media (max-width:1024px) and (orientation:landscape){
+    body{
+        //background: #924E99;
+        .wrapper{
+            width: 100%;
+            h1{
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            h3{
+                font-size: 1.4rem;
+            }
+
+    
+            //setting card areas
+            .card_container{
+                margin-top: 3em;
+                grid-template-columns: 1fr;
+                place-content: center   ;
+    
+                //setting typing area of card
+                .card_entry{
+                    // background-color: #924e9957;
+                    width: 100%;
+                    .box{
+                        width: 50%;
+                   }
+    
+                   //setting submit button
+                   .btn_check{
+                        width: 35%;
+                   }
+
+                }
+    
+    
+                //setting card display area
+                .card_display{
+                    margin: 0 auto;
+                    margin-top: 1em;
+                    width: 65%;
+    
+                    .centre__cardno{
+                        // background-color
+                        font-size: clamp(3vw, 6.5vw, 6.5vw );
+                    }
+    
+                    .card__bottom{
+    
+                        .cardname{
+                            font-size: 1.1rem;
+                            font-weight: 400;
+                        }
+    
+                        .validdate{
+                            font-weight: 500;
+                            font-size: .6em ;
+                            .lbldate{
+                                margin-left: .4em;
+                            }
+    
+    
+                        }
+    
+                        img{
+                            width: 17%;
+                        }
+                    }
+    
+                }
+            }
+    
+    
+    
+        }
+    }
+}
+
 
 
 //media query for screen below 480 pixels
