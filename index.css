@@ -162,6 +162,17 @@ body .wrapper .card_container .card_display .card__bottom img {
   width: 17%;
   opacity: 0.6;
 }
+body .error {
+  margin-top: 1em;
+  color: red;
+  background-color: white;
+  padding: 0.2em 0.3em;
+  border-radius: 0.5em;
+  display: none;
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   body .wrapper {

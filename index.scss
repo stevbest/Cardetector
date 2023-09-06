@@ -26,16 +26,9 @@ body{
     flex-direction: column;
     justify-content: center;
     .wrapper{
-        // background-color: rgb(255, 255, 255, .2);
         margin: 0 auto;
         width: 80%;
 
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-
-
-        //styping of the headings
         h1, h3{
             color: #fff;
             text-align: center;
@@ -49,28 +42,20 @@ body{
             font-size: 1.4rem;
         }
 
-
-
-        //setting card areas
         .card_container{
             margin-top: 5em;
-            // background-color: #0113417e;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            // place-content: center;
             transition: all 0.5s ease;
-            //setting typing area of card
             .card_entry{
-                // background-color: #924e9957;
                 width: 45%;
                 margin: 0 auto;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                //setting textboxes
                 .box{
                     transition: all 0.5s ease;
                     font-size: 1rem;
@@ -93,7 +78,6 @@ body{
                 color: #fff;
                }
 
-               //setting submit button
                .btn_check{
                     color: #fff;
                     text-decoration: none;
@@ -115,19 +99,12 @@ body{
                }
             }
 
-
-            //setting card display area
             .card_display{
                 display: none;
                 color: #fff;
                 padding: 1em 1em;
                 width: 35%;
                 transition: all .5s ease;
-                // background: url('./map1.png');
-                // background-position: top center;
-                // background-repeat: no-repeat;
-                // background-size: contain;
-                // background-color: rgba(97, 97, 97, 0.2);
                 background: linear-gradient(45deg, rgba(144, 78, 151, 0.388),
                  rgba(8, 25, 87, 0.678));
                 backdrop-filter: blur(.1em);
@@ -137,7 +114,6 @@ body{
                 border-radius: 1.2em;
 
                 .top__cardtitle{
-                    // background-color: #011341;
                     color: #fff;
                     display: flex;
                     align-items: center;
@@ -154,7 +130,6 @@ body{
                 }
 
                 .card__centre{
-                    // background-color: #011341;
                     display: flex;
                     align-items: end;
                     justify-content: space-between;
@@ -170,14 +145,10 @@ body{
                 }
 
                 .centre__cardno{
-                    // background-color:#1c2c6769;
                     font-weight: 700;
                     margin: .5em 0;
-                    // font-size: 2.5rem;
-                    // width: 100%;
                     text-align: justify;
                     font-size: clamp(2vw, 5vw, 2.75vw );
-                    // letter-spacing: 0.23em;
                 }
 
                 .card__bottom{
@@ -192,7 +163,6 @@ body{
                         font-size: 1.2rem;
                         font-weight: 600;
                         width: 40%;
-                        // background-color: #1C2C67;
                     }
 
                     .validdate{
@@ -202,7 +172,7 @@ body{
                         align-items: center;
                         .lbldate{
                             margin-left: .3em;
-                            //float: right;
+                         
                         }
 
 
@@ -220,13 +190,24 @@ body{
 
 
     }
+
+    .error{
+        margin-top: 1em;
+        color: red;
+        background-color: white;
+        padding: .2em .3em;
+        border-radius: .5em;
+        display: none;
+        width: 80%;
+        margin-inline: auto;
+        text-align: center;
+    }
 }
 
 
-//breaking points for media query
+
 $bp: (mobile:480px, tablet:768px,);
 
-//creating media query
 @mixin query ($screen){
     @each $key, $value in $bp{
         @if($key == $screen){
@@ -238,7 +219,7 @@ $bp: (mobile:480px, tablet:768px,);
 }
 
 
-// //media query for screen below table 768 pixels
+
 @include query(tablet){
     body{
         .wrapper{
@@ -252,21 +233,21 @@ $bp: (mobile:480px, tablet:768px,);
             }
 
     
-            //setting card areas
+            
             .card_container{
                 margin-top: 3em;
                 grid-template-columns: 1fr;
                 place-content: center   ;
     
-                //setting typing area of card
+                
                 .card_entry{
-                    // background-color: #924e9957;
+                    
                     width: 100%;
                     .box{
                         width: 50%;
                    }
     
-                   //setting submit button
+                   
                    .btn_check{
                         width: 35%;
                    }
@@ -274,14 +255,14 @@ $bp: (mobile:480px, tablet:768px,);
                 }
     
     
-                //setting card display area
+                
                 .card_display{
                     margin: 0 auto;
                     margin-top: 1em;
                     width: 65%;
     
                     .centre__cardno{
-                        // background-color
+                        
                         font-size: clamp(3vw, 6.5vw, 6.5vw );
                     }
     
@@ -318,7 +299,7 @@ $bp: (mobile:480px, tablet:768px,);
 
 @media (max-width:1024px) and (orientation:landscape){
     body{
-        //background: #924E99;
+        
         .wrapper{
             width: 100%;
             h1{
@@ -330,21 +311,21 @@ $bp: (mobile:480px, tablet:768px,);
             }
 
     
-            //setting card areas
+            
             .card_container{
                 margin-top: 3em;
                 grid-template-columns: 1fr;
                 place-content: center   ;
     
-                //setting typing area of card
+                
                 .card_entry{
-                    // background-color: #924e9957;
+                    
                     width: 100%;
                     .box{
                         width: 50%;
                    }
     
-                   //setting submit button
+                   
                    .btn_check{
                         width: 35%;
                    }
@@ -352,14 +333,14 @@ $bp: (mobile:480px, tablet:768px,);
                 }
     
     
-                //setting card display area
+                
                 .card_display{
                     margin: 0 auto;
                     margin-top: 1em;
                     width: 65%;
     
                     .centre__cardno{
-                        // background-color
+                        
                         font-size: clamp(3vw, 6.5vw, 6.5vw );
                     }
     
@@ -396,13 +377,13 @@ $bp: (mobile:480px, tablet:768px,);
 
 
 
-//media query for screen below 480 pixels
+
 @include query(mobile){
     body{
         .wrapper{
             width: 100%;
     
-            //styping of the headings
+            
             h1{
                 font-size: 2.4rem;
                 font-weight: 600;
@@ -412,18 +393,18 @@ $bp: (mobile:480px, tablet:768px,);
             }
 
     
-            //setting card areas
+            
             .card_container{
                 margin-top: 3em;
                 grid-template-columns: 1fr;
                 place-content: center   ;
     
-                //setting typing area of card
+                
                 .card_entry{
-                    // background-color: #924e9957;
+                    
                     width: 100%;
                     .box{
-                        // font-size: 1rem;
+                        
                         width: 65%;
                    }
                    .btn_check{
@@ -432,7 +413,7 @@ $bp: (mobile:480px, tablet:768px,);
                 }
     
     
-                //setting card display area
+                
                 .card_display{
                     margin: 0 auto;
                     margin-top: 1em;
@@ -474,334 +455,3 @@ $bp: (mobile:480px, tablet:768px,);
     }
 }
 
-
-
-
-
-
-
-
-
-
-// body{
-//     background: url('/13182208_5166950.jpg');
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: top left;
-//     height: 100vh;
-// }
-
-
-// body{
-
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     // align-items: center    ;
-//     .wrapper{
-//         transition: all .5s ease;
-//         margin: 0 auto;
-//         width: 80%;
-
-//         // background-color: rgba(255, 255, 255, 0.11);
-
-//         &__header{
-//             // background-color: rgba(255, 228, 196, 0.315);
-//             .title{
-//                 text-align: center;
-//                 font-size: 2.5rem;
-//                 color: #fff;
-//                 margin-bottom: .5em;
-//             }
-
-//             .author{
-//                 text-align: center;
-//                 font-size: 1.5rem;
-//                 color: #fff;
-//                 // margin-bottom: 2em;
-//             }
-
-//             margin-bottom: 5em;
-//         }
-
-//         &__cardentry{
-//             // margin-top: 2em;
-//             // background-color: rgba(127, 255, 212, 0.13);
-//             display: grid;
-//             grid-template-columns: repeat(2, 1fr);
-//             place-items: center;
-
-//             .cardentry__entry{
-//                 // background-color: rgba(0, 0, 0, 0.288);
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: center;
-//                 justify-content: center;
-//                 width: 80%;
-//                 padding: .8em 0;
-
-//                .box{
-//                     font-size: 1rem;
-//                     width: 55%;
-//                     margin-bottom: 1em;
-//                     text-align: center;
-//                     padding: .7em .5em;
-//                     color: #fff;
-//                     background: rgba(255, 255, 255, 0.1);
-//                     // backdrop-filter: blur(20);
-//                     border: none;
-//                     outline-width: 1;
-//                     outline-color: aliceblue;
-//                     border-radius: .5em;
-//                }
-//                .box::placeholder{
-//                 color: #fff;
-//                }
-// //924E99
-// //1C2C67
-// //144BA5
-// //011341
-//                .btn_check{
-//                     color: #fff;
-//                     text-decoration: none;
-//                     width: 40%;
-//                     font-size: 1.01rem;
-//                     padding: .5em 0.12em;
-//                     text-align: center;
-//                     background: linear-gradient(45deg, #924E99, #1C2C67);
-//                     border-radius: .7em;
-//                }
-//                .btn_check:active{
-//                     color: #fff;
-//                }
-//                .btn_check:visited{
-//                     color: #fff;
-//                }
-
-//             }
-
-
-//             .cardentry__card{
-
-
-//                 color: #fff;
-//                 padding: 1em 1em;
-//                 width: 65%;
-//                 background: url('./map1.png');
-//                 background-position: top center;
-//                 background-repeat: no-repeat;
-//                 background-size: contain;
-//                 background-color: rgba(216, 213, 213, 0.336);
-//                 // background: rgba(255, 255, 255, 0.3);
-//                 backdrop-filter: blur(50);
-//                 border: none;
-//                 border-radius: 1.5em;
-
-//                 .top__cardtitle{
-//                     font-size: 1.01rem;
-//                     font-weight: 600;
-//                     color: #fff;
-//                     span{
-//                         float: right;
-//                         img{
-//                             width: 70%;
-//                         }
-//                     }
-//                 }
-
-//                 .card__centre{
-//                     display: flex;
-//                     align-items: end;
-//                     justify-content: space-between;
-//                     margin-top: 2em;
-//                     // margin-bottom: 1.2em;
-//                     // background-color: #924E99;
-//                     img{
-//                         width: 12%;
-//                     }
-
-//                     .centre__secpin{
-//                         float: right;
-//                         font-size: 1.2rem;
-//                     }
-//                 }
-
-//                 .centre__cardno{
-//                     font-weight: 700;
-//                     margin: .5em 0;
-//                     font-size: 2.85rem;
-//                     // letter-spacing: .11em;
-//                 }
-
-//                 .card__bottom{
-//                     display: flex;
-//                     align-items: center;
-//                     justify-content: space-between;
-
-//                     .cardname{
-//                         font-size: 1.2rem;
-//                         font-weight: 600;
-//                         width: 40%;
-//                         // background-color: #1C2C67;
-//                     }
-
-//                     .validdate{
-//                         font-weight: 600;
-//                         font-size: .8em ;
-//                         display: flex;
-//                         align-items: center;
-//                         .lbldate{
-//                             margin-left: .3em;
-//                             //float: right;
-//                         }
-
-
-//                     }
-
-//                     img{
-//                         width: 17%;
-//                     }
-//                 }
-
-
-
-
-//             }
-//         }
-
-//     }
-
-
-// }
-
-
-
-// @media (max-width:480px){
-//     body{
-//         .wrapper{
-//             width: 100%;
-//             &__header{
-//                 .title{
-//                     font-size: 2.5rem;
-//                     margin-bottom: .4em;
-//                     line-height: 1;
-//                 }
-
-//                 .author{
-//                     font-size: 1.2rem;
-//                     margin-bottom: 2em;
-//                 }
-//             }
-
-//             &__cardentry{
-//                 grid-template-columns: 1fr;
-//                 .cardentry__entry{
-//                     width: 100%;
-//                     padding: 2em 0;
-
-//                    .box{
-//                         width: 70%;
-//                         margin-bottom: 2em;
-//                    }
-//     //924E99
-//     //1C2C67
-//     //144BA5
-//     //011341
-//                    .btn_check{
-//                         width: 50%;
-//                         font-size: 1.128rem;
-//                    }
-
-//                 }
-
-
-//                 .cardentry__card{
-
-//                     // color: #fff;
-//                     // padding: 1em 1em;
-//                     width: 95%;
-//                     // background: url('./map1.png');
-//                     // background-position: top center;
-//                     // background-repeat: no-repeat;
-//                     // background-size: contain;
-//                     // background-color: rgba(105, 105, 105, 0.336);
-//                     // // background: rgba(255, 255, 255, 0.3);
-//                     // backdrop-filter: blur(50);
-//                     // border: none;
-//                     // border-radius: 1.5em;
-
-//                     .top__cardtitle{
-//                         // font-size: 1.3rem;
-//                         // font-weight: 600;
-//                         // color: #fff;
-//                         // span{
-//                         //     float: right;
-//                         //     img{
-//                         //         width: 70%;
-//                         //     }
-//                         // }
-//                     }
-
-//                     .card__centre{
-//                         // display: flex;
-//                         // align-items: end;
-//                         // justify-content: space-between;
-//                         // margin-top: 2em;
-//                         // // margin-bottom: 1.2em;
-//                         // // background-color: #924E99;
-//                         // img{
-//                         //     width: 12%;
-//                         // }
-
-//                         // .centre__secpin{
-//                         //     float: right;
-//                         //     font-size: 1.2rem;
-//                         // }
-//                     }
-
-//                     .centre__cardno{
-//                         font-size: 2.4rem;
-//                         // font-weight: 700;
-//                         // margin: .5em 0;
-//                         // letter-spacing: .11em;
-//                     }
-
-//                     .card__bottom{
-//                         // display: flex;
-//                         // align-items: center;
-//                         // justify-content: space-between;
-
-//                         .cardname{
-//                             // font-size: 1.2rem;
-//                             // font-weight: 600;
-//                             // width: 40%;
-//                             // // background-color: #1C2C67;
-//                         }
-
-//                         .validdate{
-//                             // font-weight: 600;
-//                             // font-size: .8em ;
-//                             // display: flex;
-//                             // align-items: center;
-//                             // .lbldate{
-//                             //     margin-left: .3em;
-//                             //     //float: right;
-//                             // }
-
-
-//                         }
-
-//                         img{
-//                             //width: 17%;
-//                         }
-//                     }
-
-
-
-
-//                 }
-//             }
-
-//         }
-//     }
-// }
